@@ -1,5 +1,5 @@
 import { defineConfig, devices } from 'next/experimental/testmode/playwright';
-import 'dotenv/config';
+//import 'dotenv/config';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
