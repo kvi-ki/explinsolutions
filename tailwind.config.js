@@ -12,9 +12,10 @@ export default {
       },
     },
     screens: {
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px'
+      'sm': '40rem',
+      'md': '48rem',
+      'lg': '64rem',
+      'xl': '80rem'
     },
     colors: {
       green: '#7DBB4B',
@@ -23,6 +24,8 @@ export default {
     },
     fontSize: {
       header: '2rem',
+      headerLg: '3.5rem',
+      headerXl: '5rem',
     }
   },
   plugins: []

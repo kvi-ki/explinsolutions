@@ -10,11 +10,11 @@ export default function Header() {
       </svg>
 
       <header
-        className="m-3 min-h-[250px] text-white bg-[url(/assets/electric_tower.jpg)] bg-cover bg-center rounded-xl"
+        className="m-3 min-h-[250px] text-white bg-[url(/assets/electric_tower.jpg)] bg-cover bg-center rounded-xl lg:min-h-[380px]"
         style={{ clipPath: 'url(#headerClip)' }}
       >
-        <h1 className="relative top-2 left-4 text-header tracking-wide">
-          Explinsolutions
+        <h1 className="pt-4 pl-3 text-header tracking-wide lg:text-headerLg lg:pt-12 lg:pl-6 xl:text-headerXl  xl:pt-16 xl:pl-40">
+          Explinsolutions_
         </h1>
       </header>
     </>
