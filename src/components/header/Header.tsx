@@ -9,11 +9,14 @@ export default function Header() {
         </defs>
       </svg>
 
-      <header
-        className="header bg-[url(/assets/electric_tower.jpg)]"
-        style={{ clipPath: 'url(#headerClip)' }}
-      >
-        <h1 className="heading">Explinsolutions_</h1>
+      <header className="min-w-[8rem]">
+        <img src="/favicon.png" alt="Explinsolutions label" className="label" />
+        <div
+          className="bg-[url(/assets/electric_tower.jpg)] heading-wrapper"
+          style={{ clipPath: 'url(#headerClip)' }}
+        >
+          <h1 className="heading">Explinsolutions_</h1>
+        </div>
       </header>
     </>
   );

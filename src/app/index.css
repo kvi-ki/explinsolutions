@@ -4,10 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {
-  @apply m-3 min-h-[15.5rem] text-white bg-cover bg-center rounded-xl lg:min-h-[24rem];
+.heading-wrapper {
+  @apply m-2 min-h-[15rem] bg-cover bg-center rounded-xl lg:min-h-[24rem];
 }
 
 .heading {
-  @apply pt-4 pl-3 text-header tracking-wide md:text-headerMd md:pt-8 md:pl-6 lg:text-headerLg lg:pt-12 lg:pl-8 xl:text-headerXl  xl:pt-16 xl:pl-40;
+  @apply pt-3 pl-3 text-header text-white tracking-wide md:text-headerMd md:pt-8 md:pl-6 lg:text-headerLg lg:pt-12 lg:pl-8 xl:text-headerXl  xl:pt-16 xl:pl-40;
+}
+
+.label {
+  @apply size-4 m-2 md:size-6 lg:size-8 xl:size-10;
 }
