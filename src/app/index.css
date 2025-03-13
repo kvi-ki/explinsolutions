@@ -4,4 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.header {
+  @apply m-3 min-h-[15.5rem] text-white bg-cover bg-center rounded-xl lg:min-h-[24rem];
+}
 
+.heading {
+  @apply pt-4 pl-3 text-header tracking-wide lg:text-headerLg lg:pt-12 lg:pl-6 xl:text-headerXl  xl:pt-16 xl:pl-40;
+}
