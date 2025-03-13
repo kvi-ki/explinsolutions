@@ -9,5 +9,5 @@
 }
 
 .heading {
-  @apply pt-4 pl-3 text-header tracking-wide lg:text-headerLg lg:pt-12 lg:pl-6 xl:text-headerXl  xl:pt-16 xl:pl-40;
+  @apply pt-4 pl-3 text-header tracking-wide md:text-headerMd md:pt-8 md:pl-6 lg:text-headerLg lg:pt-12 lg:pl-8 xl:text-headerXl  xl:pt-16 xl:pl-40;
 }
