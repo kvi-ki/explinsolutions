@@ -19,7 +19,7 @@ export default function Header() {
           borderRadius: '3%'
         }}
       >
-        <h1 className="relative top-2 left-4 text-title text-header tracking-wide">
+        <h1 className="relative top-2 left-4 text-header tracking-wide">
           Explinsolutions
         </h1>
       </header>
