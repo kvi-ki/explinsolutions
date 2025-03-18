@@ -10,12 +10,12 @@ export default {
       fontFamily: {
         body: ["Roboto", "sans-serif"]
       },
-    },
-    screens: {
-      'sm': '40rem',
-      'md': '48rem',
-      'lg': '64rem',
-      'xl': '80rem'
+      fontSize: {
+        mdPreamble: 'clamp(0.6rem, 0.8rem + 1vw, 3rem)'
+      },
+      spacing: {
+        topSpacing: 'clamp(24rem, 25rem + 1vw, 30rem)'
+      }
     },
     colors: {
       green: '#7DBB4B',
