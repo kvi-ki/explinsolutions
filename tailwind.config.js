@@ -12,7 +12,8 @@ export default {
       },
       fontSize: {
         heading: 'clamp(1.2rem, 2.5% + 1vw, 4rem)',
-        mdPreamble: 'clamp(0.6rem, 0.8rem + 1vw, 3rem)'
+        mdPreamble: 'clamp(0.6rem, 0.8rem + 1vw, 3rem)',
+        description: 'clamp(1rem, 1.1rem + 1vw, 1.8rem)'
       },
       spacing: {
         topSx: 'clamp(11.3rem, 1.5% + 1vw, 14rem)',
