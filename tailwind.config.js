@@ -13,7 +13,7 @@ export default {
       fontSize: {
         heading: 'clamp(1.2rem, 2.5% + 1vw, 4rem)',
         mdPreamble: 'clamp(0.6rem, 0.8rem + 1vw, 3rem)',
-        description: 'clamp(1rem, 1.1rem + 1vw, 1.8rem)'
+        description: 'clamp(0.8rem, 1.1rem + 1vw, 1.8rem)'
       },
       spacing: {
         topSx: 'clamp(11.3rem, 1.5% + 1vw, 14rem)',
@@ -30,14 +30,16 @@ export default {
     },
     colors: {
       green: '#7DBB4B',
-      gray: '#4D4E4D',
-      white: '#FFFFFF'
+      //gray: '#4D4E4D',
+      gray: '#696969',
+      white: '#FFFFFF',
+      black: '#000000'
     },
     fontSize: {
       header: '2rem',
-      headerMd: '2.5rem',
-      headerLg: '3.5rem',
-      headerXl: '5rem',
+      sectionHeader: '1.125rem',
+      sectionHeaderMd: '1.5rem',
+      sectionHeaderLg: '1.8rem'
     }
   },
   plugins: []
