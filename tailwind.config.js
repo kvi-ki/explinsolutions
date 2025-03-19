@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  mode: 'jit',
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{html,js,jsx,ts,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -32,8 +33,10 @@ export default {
       green: '#7DBB4B',
       //gray: '#4D4E4D',
       gray: '#696969',
+      lightGray: '#F2F4F3',
       white: '#FFFFFF',
-      black: '#000000'
+      black: '#000000',
+      textRed: '#ff0000'
     },
     fontSize: {
       header: '2rem',
@@ -45,5 +48,5 @@ export default {
       descriptionLg: '1.6rem'
     }
   },
-  plugins: []
+  plugins: [],
 }
