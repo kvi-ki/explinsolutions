@@ -1,30 +1,31 @@
-{
-  "services": [
-    {
-      "Ingeniería eléctrica": [
-        "Automatización Industrial",
-        "Diseño y fabricación de Armarios eléctricos",
-        "Instalaciones eléctricas",
-        "Instalaciones Redes",
-        "Mantenimiento de maquinaria y equipos electromecánicos"
-      ]
-    },
-    {
-      "Montaje Mecánico": [
-        "Automatización industrial",
-        "Instalaciones de fluidas",
-        "Construcciones mecánicas",
-        "Mantenimiento de maquinaria y equipos electromecánicos"
-      ]
-    },
-    {
-      "Obra civil especializada": [
-        "Bancadas hormigón maquinaria",
-        "Cimentación maquinaria y estructuras",
-        "Canalizaciones de agua",
-        "Canalizaciones eléctricas",
-        "Pavimentos Industriales"
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "Ingeniería eléctrica",
+    "sections": [
+      "Automatización Industrial",
+      "Diseño y fabricación de Armarios eléctricos",
+      "Instalaciones eléctricas",
+      "Instalaciones Redes",
+      "Mantenimiento de maquinaria y equipos electromecánicos"
+    ]
+  },
+  {
+    "name": "Montaje Mecánico",
+    "sections": [
+      "Automatización industrial",
+      "Instalaciones de fluidas",
+      "Construcciones mecánicas",
+      "Mantenimiento de maquinaria y equipos electromecánicos"
+    ]
+  },
+  {
+    "name": "Obra civil especializada",
+    "sections": [
+      "Bancadas hormigón maquinaria",
+      "Cimentación maquinaria y estructuras",
+      "Canalizaciones de agua",
+      "Canalizaciones eléctricas",
+      "Pavimentos Industriales"
+    ]
+  }
+]
