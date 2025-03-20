@@ -1,30 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.heading-wrapper {
-  @apply m-[2vw] min-h-[12rem] bg-cover bg-center rounded-xl md:min-h-[16rem] lg:min-h-[24rem] xl:h-[24rem];
+body {
+  @apply font-body 
+  xl:w-8/12 xl:m-auto;
 }
 
-.heading {
-  @apply pt-3 pl-3 text-[6vw] text-white tracking-wide md:pt-8 md:pl-6 lg:pt-12 lg:pl-6 xl:pt-10;
+.heading-wrapper {
+  @apply relative m-[2vw] min-h-[12rem] bg-cover bg-center rounded-xl 
+  md:min-h-[16rem] 
+  lg:min-h-[24rem] 
+  xl:m-0;
 }
 
 .label {
-  @apply size-6 m-[2vw]  md:size-8 lg:size-10 xl:size-14;
+  @apply size-6 m-[2vw] 
+  lg:size-10 
+  xl:ml-0 xl:mt-4 xl:mb-4;
+}
+
+.heading {
+  @apply pt-3 pl-3 text-2xl text-white tracking-wide font-thin
+  md:pt-8 md:pl-6 
+  lg:text-5xl lg:pt-12 lg:pl-16;
 }
 
 .preamble {
-  @apply min-w-40 flex flex-col absolute right-4 top-topSx text-black text-mdPreamble w-1/3 sm:top-topSm sm:right-16
-  md:top-topMd
-  lg:right-32 lg:top-topLg lg:w-1/4
-  xl:w-1/4 xl:top-topXl;
+  @apply absolute right-0 bottom-0 bg-white rounded-tl-lg p-2 w-2/4 flex flex-col text-darkGray text-base font-light 
+  md:pl-16 md:pr-16
+  lg:h-1/4 lg:w-5/12 lg:pt-4 lg:pb-4 lg:text-2xl;
 }
 
 .description-text {
-  @apply text-descriptionSm text-center text-gray 
-  md:text-descriptionMd
-  lg:text-descriptionLg;
+  @apply text-base font-light text-center text-darkGray
+  lg:text-2xl;
+}
+
+.services-header {
+  @apply pt-6 text-center text-gray text-base 
+  lg:text-2xl lg:pt-12;
+}
+
+.services-list {
+  @apply m-[6vw] flex flex-wrap justify-around content-between xl:m-[4vw];
+}
+
+.service-item {
+  @apply bg-white border border-green rounded-xl p-2 m-2 w-1/3 aspect-square flex flex-col justify-center text-darkGray font-light text-sm
+  md:w-1/6 
+  lg:text-xl;
+}
+
+.service-heading {
+  @apply w-full text-center text-wrap text-sm 
+  lg:text-base;
 }
