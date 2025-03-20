@@ -12,9 +12,17 @@ export default {
         body: ["Roboto", "sans-serif"]
       },
       fontSize: {
+        ...require('tailwindcss/defaultTheme').fontSize,
         heading: 'clamp(1.2rem, 2.5% + 1vw, 4rem)',
         mdPreamble: 'clamp(0.6rem, 0.8rem + 1vw, 3rem)',
-        description: 'clamp(0.8rem, 1.1rem + 1vw, 1.4rem)'
+        description: 'clamp(0.8rem, 1.1rem + 1vw, 1.4rem)',
+        header: '2rem',
+        sectionHeader: '1.125rem',
+        sectionHeaderMd: '1.5rem',
+        sectionHeaderLg: '1.8rem',
+        descriptionSm: '1rem',
+        descriptionMd: '1.3rem',
+        descriptionLg: '1.6rem'
       },
       spacing: {
         topSx: 'clamp(11.3rem, 1.5% + 1vw, 14rem)',
@@ -38,15 +46,7 @@ export default {
       black: '#000000',
       textRed: '#ff0000'
     },
-    fontSize: {
-      header: '2rem',
-      sectionHeader: '1.125rem',
-      sectionHeaderMd: '1.5rem',
-      sectionHeaderLg: '1.8rem',
-      descriptionSm: '1rem',
-      descriptionMd: '1.3rem',
-      descriptionLg: '1.6rem'
-    }
+    fontSize: {}
   },
   plugins: [],
 }
