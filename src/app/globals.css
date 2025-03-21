@@ -50,3 +50,7 @@ body {
   @apply w-full text-center text-wrap text-sm 
   lg:text-base;
 }
+
+.footer-icon {
+  @apply text-green size-5;
+}
