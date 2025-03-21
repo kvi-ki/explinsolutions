@@ -11,7 +11,7 @@ export default function Services() {
       </h2>
       <ul className="services-list">
         {services.map((service) => (
-          <Service key={service.name} name={service.name} />
+          <Service key={service.name} serviceData={service} />
         ))}
       </ul>
     </section>

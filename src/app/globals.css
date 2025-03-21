@@ -42,11 +42,11 @@ body {
 }
 
 .service-item {
-  @apply bg-white border border-green rounded-xl p-2 m-2 w-28 h-28 flex flex-col justify-center text-darkGray font-light text-base xl:w-36 xl:h-36;
+  @apply bg-white border border-green rounded-xl p-2 m-2 w-28 h-28 flex flex-col justify-around items-center text-darkGray font-light text-base xl:w-36 xl:h-36;
 }
 
 .service-heading {
-  @apply w-full text-center text-wrap text-sm 
+  @apply w-full text-center text-wrap text-sm font-normal 
   lg:text-base;
 }
 
