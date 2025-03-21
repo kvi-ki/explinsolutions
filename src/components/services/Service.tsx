@@ -26,12 +26,13 @@ export default function Service({
         >
           Detalles
         </p>
-        {isVisible &&
-          serviceData.sections.map((section) => (
-            <ul className="list-disc">
-              <li>{section}</li>
-            </ul>
-          ))}
+        {isVisible && (
+          <ul className="service-sections-list">
+            {serviceData.sections.map((section) => (
+              <li>- {section}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </li>
   );
