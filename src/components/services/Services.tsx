@@ -3,7 +3,7 @@ import services from '../../data.json';
 
 export default function Services() {
   return (
-    <section className="bg-lightGray p-4 xl:rounded-xl">
+    <section className="mb-10 bg-lightGray p-4 xl:rounded-xl">
       <h2 className="services-header">
         <span className="text-black">Servicio de confianza,</span>
         <br />
