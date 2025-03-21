@@ -4,7 +4,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 export default function Header() {
   return (
     <>
-      <header className="min-w-[8rem]">
+      <header className="min-w-[8rem] xl:w-8/12 xl:m-auto">
         <div className="h-8 m-4 flex justify-between items-center xl:ml-0 xl:mr-0">
           <img
             src="/favicon.png"
