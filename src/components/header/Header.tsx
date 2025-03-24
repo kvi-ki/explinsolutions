@@ -11,9 +11,9 @@ export default function Header() {
             alt="Explinsolutions label"
             className="size-8"
           />
-          <div className="w-28 flex justify-between items-center">
-            <FontAwesomeIcon icon={faPhone} className="text-green" />
+          <div className="w-28">
             <a href="tel:+34619792023" className="text-gray">
+              <FontAwesomeIcon icon={faPhone} className="text-green pr-1" />
               619 792 023
             </a>
           </div>
