@@ -34,7 +34,7 @@ export default function Footer() {
           <a href="tel:+34619792023">
             <FontAwesomeIcon icon={faPhoneFlip} className="footer-icon" />
           </a>
-          <a href="https://www.linkedin.com/company/explinsolutions">
+          <a href="https://www.linkedin.com/company/explinsolutions" target="_blank">
             <FontAwesomeIcon icon={faLinkedinIn} className="footer-icon" />
           </a>
         </section>
