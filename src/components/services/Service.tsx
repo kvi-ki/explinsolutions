@@ -17,17 +17,21 @@ export default function Service({
   }
 
   return (
-    <li className="service-item">
+    <li
+      className={`transition-all duration-500 ease-in-out ${isVisible ? 'service-item-expand' : 'service-item'}`}
+    >
       <h3 className="service-heading">{serviceData.name}</h3>
-      <div>
-        <p
-          className="text-xs border-b border-b-green lg:text-sm"
-          onClick={toggleList}
-        >
-          Detalles
-        </p>
+      <p
+        className="text-xs border-b border-b-green cursor-pointer lg:text-sm"
+        onClick={toggleList}
+      >
+        Detalles
+      </p>
+      <div
+        className={`transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      >
         {isVisible && (
-          <ul className="service-sections-list">
+          <ul className="text-sm/6 lg:text-base">
             {serviceData.sections.map((section) => (
               <li>- {section}</li>
             ))}
