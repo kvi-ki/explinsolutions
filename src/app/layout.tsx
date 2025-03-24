@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
-        <link rel="preload" as="image" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body id="root">{children}</body>
     </html>
