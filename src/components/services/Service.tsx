@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export type ServiceProps = {
   name: string;
@@ -11,6 +11,18 @@ export default function Service({
   serviceData: ServiceProps;
 }) {
   const [isVisible, setIsVisible] = useState(false);
+  const [largeScreenSize, setLargeScreenSize] = useState(false);
+
+  useEffect(() => {
+    const updateScreenSize = () => {
+      setLargeScreenSize(window.innerWidth > 1280 ? true : false);
+    };
+
+    updateScreenSize();
+    window.addEventListener('resize', updateScreenSize);
+
+    return () => window.removeEventListener('resize', updateScreenSize);
+  }, []);
 
   function toggleList() {
     setIsVisible((prev) => !prev);
@@ -18,7 +30,7 @@ export default function Service({
 
   return (
     <li
-      className={`transition-all duration-500 ease-in-out ${isVisible ? 'service-item-expand' : 'service-item'}`}
+      className={`${largeScreenSize ? 'service-item-expand' : `transition-all duration-500 ease-in-out ${isVisible ? 'service-item-expand' : 'service-item'}`}`}
     >
       <h3 className="service-heading">{serviceData.name}</h3>
       <p
@@ -28,9 +40,9 @@ export default function Service({
         Detalles
       </p>
       <div
-        className={`transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        className={`${largeScreenSize ? 'opacity-100' : `transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}`}
       >
-        {isVisible && (
+        {(isVisible || largeScreenSize) && (
           <ul className="text-sm/6 lg:text-base">
             {serviceData.sections.map((section) => (
               <li>- {section}</li>
