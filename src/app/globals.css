@@ -49,9 +49,13 @@ body {
   @apply bg-white border border-green rounded-xl p-10 m-2 w-80 h-96 flex flex-col justify-around items-center text-darkGray font-light;
 }
 
+.service-item-large-screen {
+  @apply bg-white border border-green rounded-xl p-8 m-2 w-80 h-80 flex flex-col justify-start items-center text-darkGray font-light;
+}
+
 .service-heading {
   @apply w-full text-center text-wrap text-sm font-normal 
-  lg:text-base;
+  lg:text-base xl:mb-10;
 }
 
 .footer-icon {

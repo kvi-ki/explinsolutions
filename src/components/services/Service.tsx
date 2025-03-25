@@ -30,15 +30,17 @@ export default function Service({
 
   return (
     <li
-      className={`${largeScreenSize ? 'service-item-expand' : `transition-all duration-500 ease-in-out ${isVisible ? 'service-item-expand' : 'service-item'}`}`}
+      className={`${largeScreenSize ? 'service-item-large-screen' : `transition-all duration-500 ease-in-out ${isVisible ? 'service-item-expand' : 'service-item'}`}`}
     >
       <h3 className="service-heading">{serviceData.name}</h3>
-      <p
-        className="text-xs border-b border-b-green cursor-pointer lg:text-sm"
-        onClick={toggleList}
-      >
-        Detalles
-      </p>
+      {!largeScreenSize && (
+        <p
+          className="text-xs border-b border-b-green cursor-pointer lg:text-sm"
+          onClick={toggleList}
+        >
+          Detalles
+        </p>
+      )}
       <div
         className={`${largeScreenSize ? 'opacity-100' : `transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}`}
       >
