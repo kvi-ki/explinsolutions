@@ -4,7 +4,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
-    <footer className="h-80 pt-12 pl-4 pr-4 pb-12 bg-darkGray md:pl-8 md:pr-8 xl:flex justify-center xl:pl-0 xl:pr-0">
+    <footer className="footer">
       <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 xl:w-8/12">
         <section className="w-52 flex justify-between">
           <img
@@ -17,7 +17,7 @@ export default function Footer() {
           </p>
         </section>
 
-        <section className="text-smallFontSize text-white font-light flex flex-col gap-4 justify-center md:items-end">
+        <section className="footer-contact-details">
           <p>
             Camí del Mig 5, 08349
             <br />
