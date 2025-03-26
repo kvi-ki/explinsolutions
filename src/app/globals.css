@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .service-item-common {
+    @apply bg-white border border-green rounded-xl flex flex-col items-center text-darkGray font-light;
+  }
+}
+
 body {
   @apply font-body h-full;
 }
@@ -42,19 +48,19 @@ body {
 }
 
 .service-item {
-  @apply bg-white border border-green rounded-xl p-2 m-2 w-32 h-32 flex flex-col justify-around items-center text-darkGray font-light text-baseFontSize xl:w-36 xl:h-36;
+  @apply service-item-common justify-around p-2 m-2 w-32 h-32 text-baseFontSize;
 }
 
 .service-item-expand {
-  @apply bg-white border border-green rounded-xl p-10 m-2 w-80 h-96 flex flex-col justify-around items-center text-darkGray font-light;
+  @apply service-item-common justify-around p-10 m-2 w-80 h-96;
 }
 
 .service-item-large-screen {
-  @apply bg-white border border-green rounded-xl p-8 m-2 w-80 h-80 flex flex-col justify-start items-center text-darkGray font-light;
+  @apply service-item-common justify-start p-8 m-2 w-80 h-80;
 }
 
 .service-heading {
-  @apply w-full text-center text-wrap text-sm font-normal 
+  @apply w-full text-center text-wrap text-smallFontSize font-normal 
   lg:text-baseFontSize xl:mb-10;
 }
 
