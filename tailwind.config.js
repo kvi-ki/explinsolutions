@@ -13,6 +13,7 @@ export default {
       },
       fontSize: {
         ...require('tailwindcss/defaultTheme').fontSize,
+        baseFontSize: ['1rem', { lineHeight: '1.5rem' }],
         largeFontSize: ['1.5rem', { lineHeight: '2rem' }],
       },
     },

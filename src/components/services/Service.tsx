@@ -45,7 +45,7 @@ export default function Service({
         className={`${largeScreenSize ? 'opacity-100' : `transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}`}
       >
         {(isVisible || largeScreenSize) && (
-          <ul className="text-sm/6 list-disc list-outside pl-6 lg:text-base">
+          <ul className="text-sm/6 list-disc list-outside pl-6 lg:text-baseFontSize">
             {serviceData.sections.map((section) => (
               <li>{section}</li>
             ))}
