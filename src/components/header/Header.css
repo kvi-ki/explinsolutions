@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components {
+  .heading-wrapper {
+    @apply relative m-4 min-h-[12rem] bg-cover bg-center rounded-xl 
+    md:min-h-[16rem] 
+    lg:min-h-[24rem] 
+    xl:m-0 xl:mr-0;
+  }
+  
+  .heading {
+    @apply pt-3 pl-3 text-largeFontSize text-white tracking-wide font-thin
+    md:pt-8 md:pl-6 
+    lg:text-5xl lg:pt-12 lg:pl-16;
+  }
+  
+  .preamble {
+    @apply absolute right-0 bottom-0 bg-white rounded-tl-lg p-2 w-2/4 flex flex-col text-darkGray text-baseFontSize font-lightWeight 
+    md:pl-16 md:pr-16
+    lg:h-1/4 lg:w-5/12 lg:pt-4 lg:pb-4 lg:text-largeFontSize;
+  }
+}

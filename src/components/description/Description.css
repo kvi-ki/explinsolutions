@@ -1,0 +1,8 @@
+@tailwind components;
+
+@layer components {
+  .description-text {
+    @apply text-baseFontSize font-lightWeight text-center text-darkGray
+    lg:text-largeFontSize;
+  }
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './Service.css';
 
 export type ServiceProps = {
   name: string;

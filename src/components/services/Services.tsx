@@ -1,5 +1,6 @@
-import Service from './Service';
+import Service from './service/Service';
 import services from '../../data.json';
+import './Services.css';
 
 export default function Services() {
   return (

@@ -1,3 +1,5 @@
+import './Description.css';
+
 export default function Description() {
   return (
     <section className="p-[6vw] xl:p-20">
