@@ -35,7 +35,7 @@ export default function Service({
       <h3 className="service-heading">{serviceData.name}</h3>
       {!largeScreenSize && (
         <p
-          className="text-xs border-b border-b-green cursor-pointer lg:text-sm"
+          className="text-xs border-b border-b-green cursor-pointer lg:text-smallFontSize"
           onClick={toggleList}
         >
           Detalles
@@ -45,7 +45,7 @@ export default function Service({
         className={`${largeScreenSize ? 'opacity-100' : `transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}`}
       >
         {(isVisible || largeScreenSize) && (
-          <ul className="text-sm/6 list-disc list-outside pl-6 lg:text-baseFontSize">
+          <ul className="text-smallFontSize/6 list-disc list-outside pl-6 lg:text-baseFontSize">
             {serviceData.sections.map((section) => (
               <li>{section}</li>
             ))}

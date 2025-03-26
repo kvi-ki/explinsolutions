@@ -17,7 +17,7 @@ export default function Footer() {
           </p>
         </section>
 
-        <section className="text-sm text-white font-light flex flex-col gap-4 justify-center md:items-end">
+        <section className="text-smallFontSize text-white font-light flex flex-col gap-4 justify-center md:items-end">
           <p>
             Camí del Mig 5, 08349
             <br />
