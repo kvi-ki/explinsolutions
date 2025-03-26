@@ -12,7 +12,8 @@ export default {
         body: ["Roboto", "sans-serif"]
       },
       fontSize: {
-        ...require('tailwindcss/defaultTheme').fontSize
+        ...require('tailwindcss/defaultTheme').fontSize,
+        largeFontSize: ['1.5rem', { lineHeight: '2rem' }],
       },
     },
     colors: {

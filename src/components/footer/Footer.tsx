@@ -12,7 +12,7 @@ export default function Footer() {
             alt="Explinsolutions label"
             className="size-6"
           />
-          <p className="text-white font-extralight tracking-wide text-2xl">
+          <p className="text-white font-extralight tracking-wide text-largeFontSize">
             Explinsolutions
           </p>
         </section>
@@ -34,7 +34,10 @@ export default function Footer() {
           <a href="tel:+34619792023">
             <FontAwesomeIcon icon={faPhoneFlip} className="footer-icon" />
           </a>
-          <a href="https://www.linkedin.com/company/explinsolutions" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/explinsolutions"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} className="footer-icon" />
           </a>
         </section>

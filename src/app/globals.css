@@ -16,7 +16,7 @@ body {
 }
 
 .heading {
-  @apply pt-3 pl-3 text-2xl text-white tracking-wide font-thin
+  @apply pt-3 pl-3 text-largeFontSize text-white tracking-wide font-thin
   md:pt-8 md:pl-6 
   lg:text-5xl lg:pt-12 lg:pl-16;
 }
@@ -24,17 +24,17 @@ body {
 .preamble {
   @apply absolute right-0 bottom-0 bg-white rounded-tl-lg p-2 w-2/4 flex flex-col text-darkGray text-base font-light 
   md:pl-16 md:pr-16
-  lg:h-1/4 lg:w-5/12 lg:pt-4 lg:pb-4 lg:text-2xl;
+  lg:h-1/4 lg:w-5/12 lg:pt-4 lg:pb-4 lg:text-largeFontSize;
 }
 
 .description-text {
   @apply text-base font-light text-center text-darkGray
-  lg:text-2xl;
+  lg:text-largeFontSize;
 }
 
 .services-header {
   @apply pt-6 text-center text-gray text-base 
-  lg:text-2xl lg:pt-12;
+  lg:text-largeFontSize lg:pt-12;
 }
 
 .services-list {
