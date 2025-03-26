@@ -17,6 +17,9 @@ export default {
         baseFontSize: ['1rem', { lineHeight: '1.5rem' }],
         largeFontSize: ['1.5rem', { lineHeight: '2rem' }],
       },
+      fontWeight: {
+        lightWeight: '300'
+      }
     },
     colors: {
       green: '#7DBB4B',

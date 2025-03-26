@@ -6,7 +6,7 @@
 
 @layer components {
   .service-item-common {
-    @apply bg-white border border-green rounded-xl flex flex-col items-center text-darkGray font-light;
+    @apply bg-white border border-green rounded-xl flex flex-col items-center text-darkGray font-lightWeight;
   }
 }
 
@@ -24,13 +24,13 @@
 }
 
 .preamble {
-  @apply absolute right-0 bottom-0 bg-white rounded-tl-lg p-2 w-2/4 flex flex-col text-darkGray text-baseFontSize font-light 
+  @apply absolute right-0 bottom-0 bg-white rounded-tl-lg p-2 w-2/4 flex flex-col text-darkGray text-baseFontSize font-lightWeight 
   md:pl-16 md:pr-16
   lg:h-1/4 lg:w-5/12 lg:pt-4 lg:pb-4 lg:text-largeFontSize;
 }
 
 .description-text {
-  @apply text-baseFontSize font-light text-center text-darkGray
+  @apply text-baseFontSize font-lightWeight text-center text-darkGray
   lg:text-largeFontSize;
 }
 
@@ -71,5 +71,5 @@
 }
 
 .footer-contact-details {
-  @apply text-smallFontSize text-white font-light flex flex-col gap-4 justify-center md:items-end;
+  @apply text-smallFontSize text-white font-lightWeight flex flex-col gap-4 justify-center md:items-end;
 }
