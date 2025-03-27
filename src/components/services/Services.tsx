@@ -1,5 +1,5 @@
 import Service from './service/Service';
-import services from '../../data.json';
+import data from '../../data.json';
 import './Services.css';
 
 export default function Services() {
@@ -11,8 +11,8 @@ export default function Services() {
         &nbsp; para sus diversas necesidades
       </h2>
       <ul className="services-list">
-        {services.map((service) => (
-          <Service key={service.name} serviceData={service} />
+        {data.services.data.map((serviceData) => (
+          <Service key={serviceData.name} serviceData={serviceData} />
         ))}
       </ul>
     </section>
