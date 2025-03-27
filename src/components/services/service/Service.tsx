@@ -47,8 +47,8 @@ export default function Service({
       >
         {(isVisible || largeScreenSize) && (
           <ul className="text-smallFontSize/6 list-disc list-outside pl-6 lg:text-baseFontSize">
-            {serviceData.sections.map((section) => (
-              <li>{section}</li>
+            {serviceData.sections.map((section, index) => (
+              <li key={section[index]}>{section}</li>
             ))}
           </ul>
         )}

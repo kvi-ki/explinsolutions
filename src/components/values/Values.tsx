@@ -6,7 +6,7 @@ export default function Values() {
   return (
     <ul className="values-list">
       {data.values.data.map((valueData) => (
-        <Value valueData={valueData} />
+        <Value valueData={valueData} key={valueData.value} />
       ))}
     </ul>
   );
