@@ -14,7 +14,7 @@ export default function Header() {
             alt="Explinsolutions label"
             className="size-8"
           />
-          <div className="w-36 flex justify-between items-center">
+          <div className="w-36 flex justify-between">
             <a
               aria-label="Chat on WhatsApp"
               href="https://wa.me/34619792023"
