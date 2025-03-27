@@ -6,7 +6,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 xl:w-8/12">
+      <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 2xl:w-10/12">
         <section className="w-52 flex justify-between">
           <img
             src="/favicon.png"

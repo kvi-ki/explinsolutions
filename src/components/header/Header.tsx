@@ -6,7 +6,7 @@ import Values from '../values/Values';
 export default function Header() {
   return (
     <>
-      <header className="min-w-[8rem] 2xl:w-8/12 2xl:m-auto">
+      <header className="min-w-[8rem] 2xl:w-10/12 2xl:m-auto">
         <div className="h-8 m-4 flex justify-between items-center 2xl:ml-0 2xl:mr-0">
           <img
             src="/favicon.png"

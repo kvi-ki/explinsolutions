@@ -4,7 +4,7 @@
   .footer {
     @apply h-80 pt-12 pl-4 pr-4 pb-12 bg-darkGray 
     md:pl-8 md:pr-8 
-    xl:flex justify-center xl:pl-0 xl:pr-0;
+    2xl:flex justify-center 2xl:pl-0 2xl:pr-0;
   }
 
   .footer-icon {
