@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .values-list {
+    @apply absolute right-0 bottom-0 bg-white rounded-tl-lg p-2 flex justify-around;
+  }
+}

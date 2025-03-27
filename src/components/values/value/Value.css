@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+  .value-item {
+    @apply w-20 h-20 flex flex-col justify-around items-center;
+  }
+
+  .value-number {
+    @apply text-baseFontSize text-black font-normal;
+  }
+
+  .value-text {
+    @apply text-center text-smallFontSize text-darkGray font-lightWeight;
+  }
+}
