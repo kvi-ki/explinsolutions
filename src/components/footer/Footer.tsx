@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneFlip, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
 export default function Footer() {
@@ -31,6 +31,13 @@ export default function Footer() {
         <section className="flex items-center gap-4 md:col-span-2 md:justify-end">
           <a href="mailto:administracion@explinsolutions.com">
             <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
+          </a>
+          <a
+            aria-label="Chat on WhatsApp"
+            href="https://wa.me/34619792023"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} className="footer-icon" />
           </a>
           <a href="tel:+34619792023">
             <FontAwesomeIcon icon={faPhoneFlip} className="footer-icon" />
