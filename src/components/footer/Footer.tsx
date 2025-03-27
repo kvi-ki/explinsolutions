@@ -37,7 +37,7 @@ export default function Footer() {
             href="https://wa.me/34619792023"
             target="_blank"
           >
-            <FontAwesomeIcon icon={faWhatsapp} className="footer-icon" />
+            <FontAwesomeIcon icon={faWhatsapp} className="text-green size-6" />
           </a>
           <a href="tel:+34619792023">
             <FontAwesomeIcon icon={faPhoneFlip} className="footer-icon" />
