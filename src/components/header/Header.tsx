@@ -6,8 +6,8 @@ import Values from '../values/Values';
 export default function Header() {
   return (
     <>
-      <header className="min-w-[8rem] xl:w-8/12 xl:m-auto">
-        <div className="h-8 m-4 flex justify-between items-center xl:ml-0 xl:mr-0">
+      <header className="min-w-[8rem] 2xl:w-8/12 2xl:m-auto">
+        <div className="h-8 m-4 flex justify-between items-center 2xl:ml-0 2xl:mr-0">
           <img
             src="/favicon.png"
             alt="Explinsolutions label"

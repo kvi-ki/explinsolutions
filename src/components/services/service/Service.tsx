@@ -16,7 +16,7 @@ export default function Service({
 
   useEffect(() => {
     const updateScreenSize = () => {
-      setLargeScreenSize(window.innerWidth > 1280 ? true : false);
+      setLargeScreenSize(window.innerWidth > 1024 ? true : false);
     };
 
     updateScreenSize();
@@ -47,8 +47,8 @@ export default function Service({
       >
         {(isVisible || largeScreenSize) && (
           <ul className="text-smallFontSize/6 list-disc list-outside pl-6 lg:text-baseFontSize">
-            {serviceData.sections.map((section, index) => (
-              <li key={section[index]}>{section}</li>
+            {serviceData.sections.map((section) => (
+              <li key={section}>{section}</li>
             ))}
           </ul>
         )}

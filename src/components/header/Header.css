@@ -5,9 +5,9 @@
     @apply relative m-4 min-h-[12rem] bg-cover bg-center rounded-xl 
     md:min-h-[16rem] 
     lg:min-h-[24rem] 
-    xl:m-0 xl:mr-0;
+    2xl:m-0 2xl:mr-0;
   }
-  
+
   .heading {
     @apply pt-3 pl-3 text-largeFontSize text-white tracking-wide font-thin
     md:pt-8 md:pl-6 

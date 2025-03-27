@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <main className="xl:w-8/12 xl:m-auto">
+      <main className="2xl:w-8/12 2xl:m-auto">
         <Description />
         <Services />
       </main>
