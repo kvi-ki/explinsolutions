@@ -1,4 +1,20 @@
 {
+  "values": {
+    "data": [
+      {
+        "number": "100%",
+        "value": "Clientes satisfechos"
+      },
+      {
+        "number": "10K",
+        "value": "Proyectos realizados"
+      },
+      {
+        "number": "33",
+        "value": "Años de experiencia"
+      }
+    ]
+  },
   "services": {
     "data": [
       {
