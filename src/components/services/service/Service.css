@@ -4,9 +4,9 @@
   .service-item-common {
     @apply bg-white border border-green rounded-xl flex flex-col items-center text-darkGray font-lightWeight;
   }
-  
+
   .service-item {
-    @apply service-item-common justify-around p-2 m-2 w-32 h-32 text-baseFontSize;
+    @apply service-item-common justify-around p-2 m-2 w-36 h-36 text-baseFontSize;
   }
 
   .service-item-expand {
@@ -14,7 +14,7 @@
   }
 
   .service-item-large-screen {
-    @apply service-item-common justify-start p-8 m-2 w-80 h-80;
+    @apply service-item-common justify-start p-8 m-2 w-80 h-96;
   }
 
   .service-heading {
