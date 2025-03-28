@@ -19,6 +19,7 @@
     "data": [
       {
         "name": "Ingeniería eléctrica",
+        "image": "/engineering-service.png",
         "sections": [
           "Automatización Industrial",
           "Diseño y fabricación de Armarios eléctricos",
@@ -29,6 +30,7 @@
       },
       {
         "name": "Montaje Mecánico",
+        "image": "/installation-service.png",
         "sections": [
           "Automatización industrial",
           "Instalaciones de fluidas",
@@ -38,6 +40,7 @@
       },
       {
         "name": "Obra civil especializada",
+        "image": "/civil-service.png",
         "sections": [
           "Bancadas hormigón maquinaria",
           "Cimentación maquinaria y estructuras",
