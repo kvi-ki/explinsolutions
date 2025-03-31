@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneFlip, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPhoneFlip,
+  faEnvelope,
+  faLocationDot
+} from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
@@ -20,7 +24,7 @@ export default function Footer() {
 
         <section className="footer-contact-details">
           <p>
-            Camí del Mig 5, 08349
+            Camí del Mig, 5, 08349
             <br />
             Cabrera de Mar (BCN)
           </p>
@@ -29,6 +33,9 @@ export default function Footer() {
         </section>
 
         <section className="flex items-center gap-4 md:col-span-2 md:justify-end">
+          <a href="https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7" target="_blank">
+            <FontAwesomeIcon icon={faLocationDot} className="footer-icon" />
+          </a>
           <a href="mailto:administracion@explinsolutions.com">
             <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
           </a>
