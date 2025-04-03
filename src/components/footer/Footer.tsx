@@ -12,14 +12,16 @@ export default function Footer() {
     <footer id="contact-details" className="footer">
       <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 2xl:w-10/12">
         <section className="w-52 flex justify-between">
-          <img
-            src="/favicon.png"
-            alt="Explinsolutions label"
-            className="size-7 rounded-full"
-          />
-          <p className="text-white font-extralight tracking-wide text-largeFontSize">
-            Explinsolutions
-          </p>
+          <a className="flex gap-3" href="#root">
+            <img
+              src="/favicon.png"
+              alt="Explinsolutions label"
+              className="size-7 rounded-full"
+            />
+            <p className="text-white font-extralight tracking-wide text-largeFontSize">
+              Explinsolutions
+            </p>
+          </a>
         </section>
 
         <section className="footer-contact-details">
