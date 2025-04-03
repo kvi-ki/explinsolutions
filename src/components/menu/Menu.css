@@ -4,7 +4,7 @@
   .list-container {
     @apply backdrop-blur-3xl flex flex-col items-start gap-10 pt-10 pl-10 fixed top-0 right-0 h-full w-52 z-50 transition-transform duration-500 ease-out;
   }
-  
+
   .menu-list {
     @apply flex flex-col gap-6 w-full;
   }
@@ -14,10 +14,10 @@
   }
 
   .menu-list li {
-    @apply border-b border-green text-darkGray text-xs font-light;
+    @apply border-b border-green text-darkGray text-sm font-light;
   }
 
   .menu-list-medium li {
-    @apply text-darkGray font-light
+    @apply text-darkGray font-light text-sm;
   }
 }
