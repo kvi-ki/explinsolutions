@@ -43,7 +43,7 @@ export default function Service({
 
       {!largeScreenSize && (
         <p
-          className="text-xs border-b border-b-green cursor-pointer lg:text-smallFontSize"
+          className="text-xs border-b border-b-green cursor-pointer hover:text-green lg:text-smallFontSize"
           onClick={toggleList}
         >
           Detalles
