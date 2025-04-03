@@ -10,11 +10,10 @@ export default function Header() {
     <>
       <header className="min-w-[8rem] 2xl:w-10/12 2xl:m-auto">
         <div className="h-8 m-4 flex justify-between items-center 2xl:ml-0 2xl:mr-0">
-          <img
-            src="/favicon.png"
-            alt="Explinsolutions label"
-            className="size-8"
-          />
+          <a className="size-8" href="#root">
+            <img src="/favicon.png" alt="Explinsolutions label" />
+          </a>
+
           <div className="w-36 flex justify-between md:order-3">
             <a
               aria-label="Chat on WhatsApp"
