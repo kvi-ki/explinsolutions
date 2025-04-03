@@ -22,7 +22,7 @@ export default function Header() {
             >
               <FontAwesomeIcon
                 icon={faWhatsapp}
-                className="text-green size-6"
+                className="text-green size-6 rounded-full hover:bg-green hover:text-white"
               />
             </a>
             <a href="tel:+34619792023" className="text-gray">
