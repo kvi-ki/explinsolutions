@@ -5,7 +5,7 @@ import './Menu.css';
 
 export default function Menu() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [mediumScreenSize, setMediumScreenSize] = useState(false);
+  const [mediumScreenSize, setMediumScreenSize] = useState(true);
   const hiddenIfScreenSizeIsMedium = mediumScreenSize ? 'hidden' : '';
 
   useEffect(() => {
@@ -47,13 +47,13 @@ export default function Menu() {
           className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}
         >
           <li>
-            <a href="#">Inicio</a>
+            <a href="#root">Inicio</a>
           </li>
           <li>
-            <a href="#">Servicios</a>
+            <a href="#services-section">Servicios</a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a href="#contact-details">Contacto</a>
           </li>
         </ul>
       </div>
