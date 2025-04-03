@@ -1,5 +1,10 @@
 import App from './App';
+import { StrictMode } from 'react';
 
 export default function Page() {
-  return <App />;
+  return (
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
 }
