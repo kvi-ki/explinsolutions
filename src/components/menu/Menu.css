@@ -14,10 +14,10 @@
   }
 
   .menu-list li {
-    @apply border-b border-green text-darkGray text-sm font-light;
+    @apply border-b border-green text-darkGray text-sm font-light hover:text-black;
   }
 
   .menu-list-medium li {
-    @apply text-darkGray font-light text-sm;
+    @apply text-darkGray font-light text-sm hover:text-green;
   }
 }
