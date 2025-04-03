@@ -11,6 +11,10 @@
     @apply text-green size-5;
   }
 
+  .footer-link {
+    @apply hover:text-green
+  }
+
   .footer-contact-details {
     @apply text-smallFontSize text-white font-lightWeight flex flex-col gap-4 justify-center md:items-end;
   }

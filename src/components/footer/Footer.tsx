@@ -23,17 +23,24 @@ export default function Footer() {
         </section>
 
         <section className="footer-contact-details">
-          <a href="https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7" target="_blank">
+          <a
+            href="https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7"
+            target="_blank"
+            className="footer-link"
+          >
             <p>
               Camí del Mig, 5, 08349
               <br />
               Cabrera de Mar (BCN)
             </p>
           </a>
-          <a href="tel:+34619792023">
+          <a href="tel:+34619792023" className="footer-link">
             <p>+ 34 619 792 023</p>
           </a>
-          <a href="mailto:administracion@explinsolutions.com">
+          <a
+            href="mailto:administracion@explinsolutions.com"
+            className="footer-link"
+          >
             <p>administracion@explinsolutions.com</p>
           </a>
         </section>
