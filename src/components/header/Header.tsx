@@ -25,7 +25,7 @@ export default function Header() {
                 className="text-green size-6 rounded-full hover:bg-green hover:text-white"
               />
             </a>
-            <a href="tel:+34619792023" className="text-gray">
+            <a href="tel:+34619792023" className="text-gray hover:text-green">
               <FontAwesomeIcon icon={faPhone} className="text-green pr-1" />
               619 792 023
             </a>
