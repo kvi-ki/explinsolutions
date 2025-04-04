@@ -21,14 +21,20 @@ export default function Contacts() {
     <section className="h-[50rem] mb-10 flex flex-col items-center justify-around lg:h-[30rem] lg:flex-row">
       <ul>
         {data.contacts.data.map((contact) => (
-          <li className="h-[6rem] m-3 flex flex-col items-center justify-around">
-            <FontAwesomeIcon
-              icon={iconMap[contact.icon]}
-              className={`size-6 rounded-full ${contact.icon === 'faWhatsapp' ? 'bg-green text-white' : 'text-green'} lg:size-7`}
-            />
-            <p className="text-sm text-darkGray font-light lg:text-base">
-              {contact.text}
-            </p>
+          <li>
+            <a
+              href={contact.link}
+              target={`${contact.icon === 'faLocationDot' || contact.icon === 'faWhatsapp' ? '_blank' : ''}`}
+              className="h-[6rem] m-3 flex flex-col items-center justify-around"
+            >
+              <FontAwesomeIcon
+                icon={iconMap[contact.icon]}
+                className={`size-6 rounded-full ${contact.icon === 'faWhatsapp' ? 'bg-green text-white' : 'text-green'} lg:size-7`}
+              />
+              <p className="text-sm text-darkGray font-light lg:text-base">
+                {contact.text}
+              </p>
+            </a>
           </li>
         ))}
       </ul>
