@@ -1,20 +1,5 @@
 import data from '../../data.json';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faPhoneFlip,
-  faEnvelope,
-  faLocationDot
-} from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
-import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-
-const iconMap: Record<string, IconDefinition> = {
-  faLocationDot,
-  faPhoneFlip,
-  faWhatsapp,
-  faEnvelope
-};
+import Contact from './contact/Contact';
 
 export default function Contacts() {
   return (
@@ -24,21 +9,13 @@ export default function Contacts() {
     >
       <ul>
         {data.contacts.data.map((contact) => (
-          <li>
-            <a
-              href={contact.link}
-              target={`${contact.icon === 'faLocationDot' || contact.icon === 'faWhatsapp' ? '_blank' : ''}`}
-              className="h-[6rem] m-3 flex flex-col items-center justify-around"
-            >
-              <FontAwesomeIcon
-                icon={iconMap[contact.icon]}
-                className={`size-6 rounded-full ${contact.icon === 'faWhatsapp' ? 'bg-green text-white' : 'text-green'} lg:size-7`}
-              />
-              <p className="text-sm text-darkGray font-light lg:text-base">
-                {contact.text}
-              </p>
-            </a>
-          </li>
+          <Contact
+            contact={{
+              icon: contact.icon,
+              text: contact.text,
+              link: contact.link
+            }}
+          />
         ))}
       </ul>
       <iframe
