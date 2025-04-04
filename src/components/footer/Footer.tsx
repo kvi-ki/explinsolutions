@@ -9,7 +9,7 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer id="contact-details" className="footer">
+    <footer className="footer">
       <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 2xl:w-10/12">
         <section className="w-52 flex justify-between">
           <a className="flex gap-3" href="#root">

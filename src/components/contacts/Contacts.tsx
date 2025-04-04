@@ -18,7 +18,10 @@ const iconMap: Record<string, IconDefinition> = {
 
 export default function Contacts() {
   return (
-    <section className="h-[50rem] mb-10 flex flex-col items-center justify-around lg:h-[30rem] lg:flex-row">
+    <section
+      id="contacts"
+      className="h-[50rem] mb-10 flex flex-col items-center justify-around lg:h-[30rem] lg:flex-row"
+    >
       <ul>
         {data.contacts.data.map((contact) => (
           <li>

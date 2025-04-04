@@ -53,7 +53,7 @@ export default function Menu() {
             <a href="#services-section">Servicios</a>
           </li>
           <li>
-            <a href="#contact-details">Contacto</a>
+            <a href="#contacts">Contacto</a>
           </li>
         </ul>
       </div>
