@@ -1,5 +1,6 @@
 'use client';
 
+import Contacts from '@/components/contacts/Contacts';
 import Description from '@/components/description/Description';
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
@@ -13,6 +14,7 @@ export default function App() {
       <main className="2xl:w-10/12 2xl:m-auto">
         <Description />
         <Services />
+        <Contacts />
       </main>
       <Footer />
     </>
