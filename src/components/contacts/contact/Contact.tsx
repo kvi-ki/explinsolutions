@@ -22,16 +22,21 @@ export type ContactProps = {
 };
 
 export default function Contact({ contact }: { contact: ContactProps }) {
+  const linkToOpenInNewTab =
+    contact.icon === 'faLocationDot' || contact.icon === 'faWhatsapp';
+  const iconColor =
+    contact.icon === 'faWhatsapp' ? 'bg-green text-white' : 'text-green';
+
   return (
     <li key={contact.icon}>
       <a
         href={contact.link}
-        target={`${contact.icon === 'faLocationDot' || contact.icon === 'faWhatsapp' ? '_blank' : ''}`}
+        target={`${linkToOpenInNewTab ? '_blank' : ''}`}
         className="h-[6rem] m-3 flex flex-col items-center justify-around"
       >
         <FontAwesomeIcon
           icon={iconMap[contact.icon]}
-          className={`size-6 rounded-full ${contact.icon === 'faWhatsapp' ? 'bg-green text-white' : 'text-green'} lg:size-7`}
+          className={`size-6 rounded-full ${iconColor} lg:size-7`}
         />
         <p className="text-sm text-darkGray font-light lg:text-base">
           {contact.text}
