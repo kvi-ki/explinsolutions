@@ -37,7 +37,7 @@ export default function Footer() {
             </p>
           </a>
           <a href="tel:+34619792023" className="footer-link">
-            <p>+ 34 619 792 023</p>
+            <p>+34 619 792 023</p>
           </a>
           <a
             href="mailto:administracion@explinsolutions.com"
