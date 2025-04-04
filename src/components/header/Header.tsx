@@ -10,7 +10,7 @@ export default function Header() {
     <>
       <header className="min-w-[8rem] 2xl:w-10/12 2xl:m-auto">
         <div className="h-8 m-4 flex justify-between items-center 2xl:ml-0 2xl:mr-0">
-          <a className="size-8" href="#root">
+          <a aria-label="Go to initial page" className="size-8" href="#root">
             <img src="/favicon.png" alt="Explinsolutions label" />
           </a>
 

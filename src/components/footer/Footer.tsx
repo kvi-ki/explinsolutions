@@ -48,10 +48,17 @@ export default function Footer() {
         </section>
 
         <section className="flex items-center gap-4 md:col-span-2 md:justify-end">
-          <a href="https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7" target="_blank">
+          <a
+            aria-label="Open location in Google map"
+            href="https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLocationDot} className="footer-icon" />
           </a>
-          <a href="mailto:administracion@explinsolutions.com">
+          <a
+            aria-label="Send an email"
+            href="mailto:administracion@explinsolutions.com"
+          >
             <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
           </a>
           <a
@@ -61,10 +68,11 @@ export default function Footer() {
           >
             <FontAwesomeIcon icon={faWhatsapp} className="text-green size-6" />
           </a>
-          <a href="tel:+34619792023">
+          <a aria-label="Call by phone" href="tel:+34619792023">
             <FontAwesomeIcon icon={faPhoneFlip} className="footer-icon" />
           </a>
           <a
+            aria-label="Open Linkedin profile"
             href="https://www.linkedin.com/company/explinsolutions"
             target="_blank"
           >
