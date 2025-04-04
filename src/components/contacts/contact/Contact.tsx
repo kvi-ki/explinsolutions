@@ -38,7 +38,7 @@ export default function Contact({ contact }: { contact: ContactProps }) {
           icon={iconMap[contact.icon]}
           className={`size-6 rounded-full ${iconColor} lg:size-7`}
         />
-        <p className="text-sm text-darkGray font-light lg:text-base">
+        <p className="text-sm text-darkGray font-light hover:text-green lg:text-base">
           {contact.text}
         </p>
       </a>
