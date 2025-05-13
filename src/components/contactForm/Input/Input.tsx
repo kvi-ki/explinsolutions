@@ -16,7 +16,7 @@ export default function FormField({ inputData }: { inputData: InputProps }) {
 
       {inputData.name === 'message' && (
         <textarea
-          className="input focus:outline-none focus:border-green"
+          className="input h-44 focus:outline-none focus:border-green"
           id={inputData.name}
           placeholder={inputData.placeholder}
           required

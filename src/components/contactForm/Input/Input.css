@@ -2,11 +2,11 @@
 
 @layer components {
   .field {
-    @apply flex flex-col gap-2 m-6;
+    @apply flex flex-col gap-2 my-8;
   }
 
   .label {
-    @apply text-darkGray text-baseFontSize font-lightWeight;
+    @apply pl-3 text-darkGray text-baseFontSize font-lightWeight;
   }
 
   .input {
