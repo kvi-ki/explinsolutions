@@ -1,5 +1,6 @@
 'use client';
 
+import ContactForm from '@/components/contactForm/ContactForm';
 import Contacts from '@/components/contacts/Contacts';
 import Description from '@/components/description/Description';
 import Footer from '@/components/footer/Footer';
@@ -15,6 +16,7 @@ export default function App() {
         <Description />
         <Services />
         <Contacts />
+        <ContactForm />
       </main>
       <Footer />
     </>
