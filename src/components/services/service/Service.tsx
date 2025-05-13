@@ -50,7 +50,7 @@ export default function Service({
         </p>
       )}
       <div
-        className={`${largeScreenSize ? 'opacity-100' : `transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}`}
+        className={`${largeScreenSize ? 'opacity-100 mt-3' : `transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}`}
       >
         {(isVisible || largeScreenSize) && (
           <ul className="text-smallFontSize/6 list-disc list-outside pl-6 lg:text-baseFontSize">
