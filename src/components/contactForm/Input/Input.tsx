@@ -19,6 +19,7 @@ export default function Input({ inputData }: { inputData: InputProps }) {
           className="input"
           id={inputData.name}
           placeholder={inputData.placeholder}
+          required
         />
       )}
 
@@ -28,6 +29,7 @@ export default function Input({ inputData }: { inputData: InputProps }) {
           id={inputData.name}
           type={inputData.type}
           placeholder={inputData.placeholder}
+          required
         />
       )}
     </div>
