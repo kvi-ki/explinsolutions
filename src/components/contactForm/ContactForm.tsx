@@ -1,4 +1,4 @@
-import Input from './Input/Input';
+import FormField from './Input/Input';
 
 export default function ContactForm() {
   return (
@@ -7,7 +7,7 @@ export default function ContactForm() {
         Ponte en contacto con nosotros
       </h2>
       <div className="py-5">
-        <Input
+        <FormField
           inputData={{
             name: 'name',
             label: 'Nombre completo',
@@ -16,7 +16,7 @@ export default function ContactForm() {
           }}
         />
 
-        <Input
+        <FormField
           inputData={{
             name: 'email',
             label: 'Correo electrónico',
@@ -25,7 +25,7 @@ export default function ContactForm() {
           }}
         />
 
-        <Input
+        <FormField
           inputData={{
             name: 'subject',
             label: 'Asunto',
@@ -34,7 +34,7 @@ export default function ContactForm() {
           }}
         />
 
-        <Input
+        <FormField
           inputData={{
             name: 'message',
             label: 'Mensaje',

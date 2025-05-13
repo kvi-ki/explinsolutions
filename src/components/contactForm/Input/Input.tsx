@@ -7,7 +7,7 @@ export type InputProps = {
   placeholder: string;
 };
 
-export default function Input({ inputData }: { inputData: InputProps }) {
+export default function FormField({ inputData }: { inputData: InputProps }) {
   return (
     <div className="field">
       <label htmlFor={inputData.name} className="label">
