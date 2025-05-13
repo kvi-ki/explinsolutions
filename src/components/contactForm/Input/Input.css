@@ -10,7 +10,7 @@
   }
 
   .input {
-    @apply p-3 rounded-xl text-baseFontSize text-darkGray border border-white;
+    @apply p-3 rounded-xl text-baseFontSize text-darkGray font-lightWeight border border-white;
   }
 
   ::placeholder {
