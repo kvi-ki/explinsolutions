@@ -2,7 +2,7 @@ import FormField from './Input/Input';
 
 export default function ContactForm() {
   return (
-    <form className="p-[6vw] mb-10 bg-lightGray xl:rounded-xl">
+    <form className="p-[6vw] bg-lightGray xl:rounded-xl">
       <h2 className="pt-6 text-center text-gray text-largeFontSize lg:pt-12">
         Ponte en contacto con nosotros
       </h2>
