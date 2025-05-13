@@ -18,6 +18,7 @@ export default {
         largeFontSize: ['1.5rem', { lineHeight: '2rem' }],
       },
       fontWeight: {
+        extraLightWeight: '200',
         lightWeight: '300'
       }
     },

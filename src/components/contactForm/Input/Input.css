@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .field {
+    @apply flex flex-col gap-2 m-6;
+  }
+
+  .label {
+    @apply text-darkGray text-baseFontSize font-lightWeight;
+  }
+
+  .input {
+    @apply p-3 rounded-xl;
+  }
+
+  ::placeholder {
+    @apply text-baseFontSize font-extraLightWeight text-darkGray;
+  }
+}

@@ -1,3 +1,5 @@
+import './Input.css';
+
 export type InputProps = {
   name: string;
   label: string;
@@ -7,15 +9,22 @@ export type InputProps = {
 
 export default function Input({ inputData }: { inputData: InputProps }) {
   return (
-    <div>
-      <label htmlFor={inputData.name}>{inputData.label}</label>
+    <div className="field">
+      <label htmlFor={inputData.name} className="label">
+        {inputData.label}
+      </label>
 
       {inputData.name === 'message' && (
-        <textarea id={inputData.name} placeholder={inputData.placeholder} />
+        <textarea
+          className="input"
+          id={inputData.name}
+          placeholder={inputData.placeholder}
+        />
       )}
 
       {inputData.name !== 'message' && (
         <input
+          className="input"
           id={inputData.name}
           type={inputData.type}
           placeholder={inputData.placeholder}
