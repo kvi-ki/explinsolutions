@@ -1,4 +1,4 @@
-import './Input.css';
+import './FormField.css';
 
 export type InputProps = {
   name: string;
