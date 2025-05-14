@@ -2,7 +2,6 @@ import ContactForm from '@/components/contactForm/ContactForm';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 describe('ContactForm', () => {
-
   it('should render the contact form fields', () => {
     render(<ContactForm />);
 
@@ -18,12 +17,8 @@ describe('ContactForm', () => {
 
     fireEvent.click(submitButton);
 
-    expect(
-      screen.getByRole('textbox', { name: 'Nombre completo' })
-    ).toBeInvalid();
-    expect(
-      screen.getByRole('textbox', { name: 'Correo electrónico' })
-    ).toBeInvalid();
+    expect(screen.getByRole('textbox', { name: 'Nombre completo' })).toBeInvalid();
+    expect(screen.getByRole('textbox', { name: 'Correo electrónico' })).toBeInvalid();
     expect(screen.getByRole('textbox', { name: 'Asunto' })).toBeInvalid();
     expect(screen.getByRole('textbox', { name: 'Mensaje' })).toBeInvalid();
   });
