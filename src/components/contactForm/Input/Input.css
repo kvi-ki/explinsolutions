@@ -16,4 +16,8 @@
   ::placeholder {
     @apply text-baseFontSize font-extraLightWeight text-darkGray;
   }
+
+  .submit-button {
+    @apply w-32 p-3 rounded-xl border border-green bg-green text-white font-lightWeight tracking-widest hover:bg-darkGreen;
+  }
 }
