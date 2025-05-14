@@ -11,7 +11,7 @@ describe('ContactForm', () => {
     expect(screen.getByLabelText('Mensaje')).toBeVisible();
   });
 
-  it('should show error when inputs are invalid', () => {
+  it('should show error when inputs are empty', () => {
     render(<ContactForm />);
     const submitButton = screen.getByRole('button', { name: 'Enviar' });
 
@@ -21,5 +21,16 @@ describe('ContactForm', () => {
     expect(screen.getByRole('textbox', { name: 'Correo electrónico' })).toBeInvalid();
     expect(screen.getByRole('textbox', { name: 'Asunto' })).toBeInvalid();
     expect(screen.getByRole('textbox', { name: 'Mensaje' })).toBeInvalid();
+  });
+
+  it('should show error when email is not valid', () => {
+    render(<ContactForm />);
+    const submitButton = screen.getByRole('button', { name: 'Enviar' });
+    const emailField = screen.getByRole('textbox', { name: 'Correo electrónico' });
+
+    fireEvent.change(emailField, { target: { value: 'invalidEmail' } });
+    fireEvent.click(submitButton);
+
+    expect(emailField).toBeInvalid();
   });
 });
