@@ -18,6 +18,7 @@ export default function FormField({ inputData }: { inputData: InputProps }) {
         <textarea
           className="input h-44 focus:outline-none focus:border-green"
           id={inputData.name}
+          name={inputData.name}
           placeholder={inputData.placeholder}
           required
         />
@@ -27,6 +28,7 @@ export default function FormField({ inputData }: { inputData: InputProps }) {
         <input
           className="input focus:outline-none focus:border-green"
           id={inputData.name}
+          name={inputData.name}
           type={inputData.type}
           placeholder={inputData.placeholder}
           required

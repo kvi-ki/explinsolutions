@@ -1,8 +1,41 @@
+import { useRef } from 'react';
 import FormField from './Input/Input';
+import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
+  const form = useRef<HTMLFormElement | null>(null);
+  
+  const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          'service_7gulyn7',
+          'template_0obqap3',
+          form.current,
+          'x5pEv8LMw4oFsjZl9'
+        )
+        .then(
+          (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+          },
+          (error) => {
+            console.log('FAILED...', error);
+          }
+        );
+    }
+    console.log('email sent');
+
+    event.currentTarget.reset();
+  };
+
   return (
-    <form className="p-8 mb-10 flex flex-col bg-lightGray xl:rounded-xl">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="p-8 mb-10 flex flex-col bg-lightGray xl:rounded-xl"
+    >
       <h2 className="pt-6 text-center text-gray text-largeFontSize lg:pt-12">
         <span className="text-black">Ponte en contacto</span>
         <br />
