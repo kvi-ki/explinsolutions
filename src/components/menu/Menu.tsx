@@ -24,6 +24,10 @@ export default function Menu() {
     setMenuIsOpen((prev) => !prev);
   }
 
+  const closeMenu = () => {
+    if (!mediumScreenSize) toggleMenu();
+  };
+
   return (
     <nav className="relative">
       <button type="button" onClick={toggleMenu} className={hiddenIfScreenSizeIsMedium}>
@@ -37,16 +41,24 @@ export default function Menu() {
         </button>
         <ul className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}>
           <li>
-            <a href="#home">Inicio</a>
+            <a href="#home" onClick={closeMenu}>
+              Inicio
+            </a>
           </li>
           <li>
-            <a href="#services-section">Servicios</a>
+            <a href="#services-section" onClick={closeMenu}>
+              Servicios
+            </a>
           </li>
           <li>
-            <a href="#contacts">Dónde estamos</a>
+            <a href="#contacts" onClick={closeMenu}>
+              Dónde estamos
+            </a>
           </li>
           <li>
-            <a href="#contact-form">Contacto</a>
+            <a href="#contact-form" onClick={closeMenu}>
+              Contacto
+            </a>
           </li>
         </ul>
       </div>
