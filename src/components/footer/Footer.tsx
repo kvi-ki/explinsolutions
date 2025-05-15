@@ -1,9 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faPhoneFlip,
-  faEnvelope,
-  faLocationDot
-} from '@fortawesome/free-solid-svg-icons';
+import { faPhoneFlip, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css';
 
@@ -12,12 +8,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 2xl:w-10/12">
         <section className="w-52 flex justify-between">
-          <a className="flex gap-3" href="#root">
-            <img
-              src="/favicon.png"
-              alt="Explinsolutions label"
-              className="size-7 rounded-full"
-            />
+          <a className="flex gap-3" href="#home">
+            <img src="/favicon.png" alt="Explinsolutions label" className="size-7 rounded-full" />
             <p className="text-white font-extralight tracking-wide text-largeFontSize">
               Explinsolutions
             </p>
@@ -39,10 +31,7 @@ export default function Footer() {
           <a href="tel:+34619792023" className="footer-link">
             <p>+34 619 792 023</p>
           </a>
-          <a
-            href="mailto:administracion@explinsolutions.com"
-            className="footer-link"
-          >
+          <a href="mailto:administracion@explinsolutions.com" className="footer-link">
             <p>administracion@explinsolutions.com</p>
           </a>
         </section>
@@ -55,17 +44,10 @@ export default function Footer() {
           >
             <FontAwesomeIcon icon={faLocationDot} className="footer-icon" />
           </a>
-          <a
-            aria-label="Send an email"
-            href="mailto:administracion@explinsolutions.com"
-          >
+          <a aria-label="Send an email" href="mailto:administracion@explinsolutions.com">
             <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
           </a>
-          <a
-            aria-label="Chat on WhatsApp"
-            href="https://wa.me/34619792023"
-            target="_blank"
-          >
+          <a aria-label="Chat on WhatsApp" href="https://wa.me/34619792023" target="_blank">
             <FontAwesomeIcon icon={faWhatsapp} className="text-green size-6" />
           </a>
           <a aria-label="Call by phone" href="tel:+34619792023">
