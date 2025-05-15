@@ -10,12 +10,7 @@ export default function ContactForm() {
 
     if (form.current) {
       emailjs
-        .sendForm(
-          'service_7gulyn7',
-          'template_0obqap3',
-          form.current,
-          'x5pEv8LMw4oFsjZl9'
-        )
+        .sendForm('service_7gulyn7', 'template_0obqap3', form.current, 'x5pEv8LMw4oFsjZl9')
         .then(
           (response) => {
             console.log('SUCCESS!', response.status, response.text);
@@ -32,6 +27,7 @@ export default function ContactForm() {
 
   return (
     <form
+      id="contact-form"
       ref={form}
       onSubmit={sendEmail}
       className="p-8 mb-10 flex flex-col bg-lightGray xl:rounded-xl"

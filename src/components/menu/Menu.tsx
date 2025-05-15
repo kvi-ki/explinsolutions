@@ -25,27 +25,17 @@ export default function Menu() {
   }
 
   return (
-    <nav className={`relative ${mediumScreenSize ? 'w-80' : ''}`}>
-      <button
-        type="button"
-        onClick={toggleMenu}
-        className={hiddenIfScreenSizeIsMedium}
-      >
+    <nav className="relative">
+      <button type="button" onClick={toggleMenu} className={hiddenIfScreenSizeIsMedium}>
         <FontAwesomeIcon icon={faBars} className="size-6 text-green" />
       </button>
       <div
         className={`${mediumScreenSize ? 'list-container-medium' : `list-container ${menuIsOpen ? 'translate-x-0' : 'translate-x-full'}`}`}
       >
-        <button
-          type="button"
-          onClick={toggleMenu}
-          className={hiddenIfScreenSizeIsMedium}
-        >
+        <button type="button" onClick={toggleMenu} className={hiddenIfScreenSizeIsMedium}>
           <FontAwesomeIcon icon={faXmark} className="size-6 text-darkGray" />
         </button>
-        <ul
-          className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}
-        >
+        <ul className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}>
           <li>
             <a href="#root">Inicio</a>
           </li>
@@ -53,7 +43,10 @@ export default function Menu() {
             <a href="#services-section">Servicios</a>
           </li>
           <li>
-            <a href="#contacts">Contacto</a>
+            <a href="#contacts">Dónde estamos</a>
+          </li>
+          <li>
+            <a href="#contact-form">Contacto</a>
           </li>
         </ul>
       </div>
