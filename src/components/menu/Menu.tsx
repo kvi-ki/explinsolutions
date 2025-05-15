@@ -37,7 +37,7 @@ export default function Menu() {
         </button>
         <ul className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}>
           <li>
-            <a href="#root">Inicio</a>
+            <a href="#home">Inicio</a>
           </li>
           <li>
             <a href="#services-section">Servicios</a>
