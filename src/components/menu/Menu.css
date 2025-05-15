@@ -10,7 +10,7 @@
   }
 
   .menu-list-medium {
-    @apply flex justify-around;
+    @apply flex justify-around gap-10 lg:gap-14;
   }
 
   .menu-list li {

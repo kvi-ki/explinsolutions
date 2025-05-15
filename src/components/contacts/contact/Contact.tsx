@@ -28,7 +28,7 @@ export default function Contact({ contact }: { contact: ContactProps }) {
     contact.icon === 'faWhatsapp' ? 'bg-green text-white' : 'text-green';
 
   return (
-    <li key={contact.icon}>
+    <li>
       <a
         href={contact.link}
         target={`${linkToOpenInNewTab ? '_blank' : ''}`}

@@ -10,6 +10,7 @@ export default function Contacts() {
       <ul>
         {data.contacts.data.map((contact) => (
           <Contact
+            key={contact.link}
             contact={{
               icon: contact.icon,
               text: contact.text,

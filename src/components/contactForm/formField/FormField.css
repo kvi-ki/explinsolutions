@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .field {
+    @apply flex flex-col gap-2 my-8;
+  }
+
+  .label {
+    @apply pl-3 text-darkGray text-baseFontSize font-lightWeight;
+  }
+
+  .input {
+    @apply p-3 rounded-xl text-baseFontSize text-darkGray font-lightWeight border border-white;
+  }
+
+  ::placeholder {
+    @apply text-baseFontSize font-extraLightWeight text-darkGray;
+  }
+
+  .submit-button {
+    @apply w-32 p-3 rounded-xl border border-green bg-green text-white font-lightWeight tracking-widest hover:bg-darkGreen;
+  }
+}

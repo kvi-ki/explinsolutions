@@ -18,11 +18,13 @@ export default {
         largeFontSize: ['1.5rem', { lineHeight: '2rem' }],
       },
       fontWeight: {
+        extraLightWeight: '200',
         lightWeight: '300'
       }
     },
     colors: {
       green: '#7DBB4B',
+      darkGreen: '#70a843',
       darkGray: '#4D4E4D',
       gray: '#696969',
       lightGray: '#F2F4F3',
