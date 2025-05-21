@@ -7,11 +7,7 @@ export type ServiceProps = {
   sections: string[];
 };
 
-export default function Service({
-  serviceData
-}: {
-  serviceData: ServiceProps;
-}) {
+export default function Service({ serviceData }: { serviceData: ServiceProps }) {
   const [isVisible, setIsVisible] = useState(false);
   const [largeScreenSize, setLargeScreenSize] = useState(false);
 
@@ -34,17 +30,14 @@ export default function Service({
     <li
       className={`${largeScreenSize ? 'service-item-large-screen' : `transition-all duration-500 ease-in-out ${isVisible ? 'service-item-expand' : 'service-item'}`}`}
     >
-      <img
-        src={serviceData.image}
-        alt="service icon"
-        className="size-8 lg:size-12 lg:mb-4"
-      />
+      <img src={serviceData.image} alt="service icon" className="size-8 lg:size-12 lg:mb-4" />
       <h3 className="service-heading">{serviceData.name}</h3>
 
       {!largeScreenSize && (
         <p
           className="text-xs border-b border-b-green cursor-pointer hover:text-green lg:text-smallFontSize"
           onClick={toggleList}
+          onBlur={toggleList}
         >
           Detalles
         </p>

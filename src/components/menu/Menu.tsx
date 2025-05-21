@@ -34,29 +34,29 @@ export default function Menu() {
         <FontAwesomeIcon icon={faBars} className="size-6 text-green" />
       </button>
       <div
-        className={`${mediumScreenSize ? 'list-container-medium' : `list-container ${menuIsOpen ? 'translate-x-0' : 'translate-x-full'}`}`}
+        className={`${mediumScreenSize ? '' : `list-container ${menuIsOpen ? 'translate-x-0' : 'translate-x-full'}`}`}
       >
         <button type="button" onClick={toggleMenu} className={hiddenIfScreenSizeIsMedium}>
           <FontAwesomeIcon icon={faXmark} className="size-6 text-darkGray" />
         </button>
         <ul className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}>
           <li>
-            <a href="#home" onClick={closeMenu}>
+            <a aria-label="Go to home page" href="#home" onClick={closeMenu}>
               Inicio
             </a>
           </li>
           <li>
-            <a href="#services-section" onClick={closeMenu}>
+            <a aria-label="Go to services section" href="#services-section" onClick={closeMenu}>
               Servicios
             </a>
           </li>
           <li>
-            <a href="#contacts" onClick={closeMenu}>
+            <a aria-label="Go to contact details section" href="#contacts" onClick={closeMenu}>
               Dónde estamos
             </a>
           </li>
           <li>
-            <a href="#contact-form" onClick={closeMenu}>
+            <a aria-label="Go to contact-form" href="#contact-form" onClick={closeMenu}>
               Contacto
             </a>
           </li>

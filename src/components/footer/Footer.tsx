@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 2xl:w-10/12">
         <section className="w-52 flex justify-between">
-          <a className="flex gap-3" href="#home">
+          <a aria-label='Go to home page' className="flex gap-3" href="#home">
             <img src="/favicon.png" alt="Explinsolutions label" className="size-7 rounded-full" />
             <p className="text-white font-extralight tracking-wide text-largeFontSize">
               Explinsolutions
@@ -18,6 +18,7 @@ export default function Footer() {
 
         <section className="footer-contact-details">
           <a
+          aria-label='Open location in Google map'
             href="https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7"
             target="_blank"
             className="footer-link"
@@ -28,10 +29,10 @@ export default function Footer() {
               Cabrera de Mar (BCN)
             </p>
           </a>
-          <a href="tel:+34619792023" className="footer-link">
+          <a aria-label='Call by phone' href="tel:+34619792023" className="footer-link">
             <p>+34 619 792 023</p>
           </a>
-          <a href="mailto:administracion@explinsolutions.com" className="footer-link">
+          <a aria-label='Send an email' href="mailto:administracion@explinsolutions.com" className="footer-link">
             <p>administracion@explinsolutions.com</p>
           </a>
         </section>
