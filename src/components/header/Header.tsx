@@ -2,18 +2,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Menu from '../menu/Menu';
+import Link from 'next/link';
 
 export default function Header() {
   return (
     <>
       <header className="min-w-[8rem] 2xl:w-10/12 2xl:m-auto">
         <div className="h-10 m-4 flex justify-between items-center 2xl:ml-0 2xl:mr-0">
-          <a aria-label="Go to initial page" className="size-10" href="#home">
+          <Link aria-label="Go to home page" href="/" className="size-10">
             <img src="/favicon.png" alt="Explinsolutions label" />
-          </a>
+          </Link>
 
           <div className="w-40 flex justify-between items-center md:order-3">
-            <a aria-label="Chat on WhatsApp" href="https://wa.me/34619792023" target="_blank">
+            <a
+              aria-label="Chat on WhatsApp"
+              href="https://wa.me/34619792023"
+              target="_blank"
+            >
               <FontAwesomeIcon
                 icon={faWhatsapp}
                 className="text-green size-7 rounded-full hover:bg-green hover:text-white"
