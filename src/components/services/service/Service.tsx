@@ -8,16 +8,16 @@ export type ServiceProps = {
 
 export default function Service({ serviceData }: { serviceData: ServiceProps }) {
   return (
-    <li className="service-item-large-screen service-item-expand">
-      <img src={serviceData.image} alt="service icon" className="size-8 lg:size-12 lg:mb-4" />
+    <li className="service-item">
+      <img src={serviceData.image} alt="service icon" className="size-12 mb-4" />
       <h3 className="service-heading">{serviceData.name}</h3>
-      <div className="opacity-100 mt-3">
-        <ul className="text-smallFontSize/6 list-disc list-outside pl-6 lg:text-baseFontSize">
-          {serviceData.sections.map((section) => (
-            <li key={section}>{section}</li>
-          ))}
-        </ul>
-      </div>
+      <ul className="text-baseFontSize">
+        {serviceData.sections.map((section) => (
+          <li key={section} className="my-4">
+            {section}
+          </li>
+        ))}
+      </ul>
     </li>
   );
 }
