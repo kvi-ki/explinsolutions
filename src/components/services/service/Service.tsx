@@ -1,4 +1,5 @@
 import './Service.css';
+import Image from 'next/image';
 
 export type ServiceProps = {
   name: string;
@@ -9,15 +10,28 @@ export type ServiceProps = {
 export default function Service({ serviceData }: { serviceData: ServiceProps }) {
   return (
     <li className="service-item">
-      <img src={serviceData.image} alt="service icon" className="size-12 mb-4" />
-      <h3 className="service-heading">{serviceData.name}</h3>
-      <ul className="text-baseFontSize">
-        {serviceData.sections.map((section) => (
-          <li key={section} className="my-4">
-            {section}
-          </li>
-        ))}
-      </ul>
+      <div className="md:w-4/6">
+        <img
+          src={serviceData.image}
+          alt="service icon"
+          className="size-12 mb-4 mx-auto"
+        />
+        <h3 className="service-heading">{serviceData.name}</h3>
+        <ul className="text-baseFontSize">
+          {serviceData.sections.map((section) => (
+            <li key={section} className="my-4 text-justify">
+              {section}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Image
+        src="/service-images/machine.png"
+        alt="machine"
+        width={400}
+        height={200}
+        className="bg-lightGray rounded-lg md:ml-4"
+      />
     </li>
   );
 }

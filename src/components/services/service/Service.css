@@ -2,9 +2,9 @@
 
 @layer components {
   .service-item {
-    @apply bg-white flex flex-col items-center text-darkGray font-lightWeight p-8 my-6;
+    @apply bg-white text-darkGray font-lightWeight p-8 my-6 md:flex;
   }
   .service-heading {
-    @apply text-center text-wrap font-normal text-baseFontSize mb-8;
+    @apply text-center text-wrap font-normal text-baseFontSize mb-4;
   }
 }
