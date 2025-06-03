@@ -2,7 +2,7 @@
 
 @layer components {
   .description-text {
-    @apply text-baseFontSize font-lightWeight text-center text-darkGray
+    @apply text-baseFontSize font-lightWeight text-justify text-darkGray
     lg:text-largeFontSize;
   }
 }
