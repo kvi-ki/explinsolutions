@@ -1,7 +1,10 @@
+'use client';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import './Menu.css';
+import Link from 'next/link';
 
 export default function Menu() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -41,14 +44,14 @@ export default function Menu() {
         </button>
         <ul className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}>
           <li>
-            <a aria-label="Go to home page" href="#home" onClick={closeMenu}>
+            <Link aria-label="Go to home page" href="/" onClick={closeMenu}>
               Inicio
-            </a>
+            </Link>
           </li>
           <li>
-            <a aria-label="Go to services section" href="#services-section" onClick={closeMenu}>
+            <Link aria-label="Go to services section" href="/servicios" onClick={closeMenu}>
               Servicios
-            </a>
+            </Link>
           </li>
           <li>
             <a aria-label="Go to contact details section" href="#contacts" onClick={closeMenu}>
