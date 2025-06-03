@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import './Header.css';
-import Values from '../values/Values';
 import Menu from '../menu/Menu';
 
 export default function Header() {
@@ -31,10 +29,6 @@ export default function Header() {
             </a>
           </div>
           <Menu />
-        </div>
-        <div className="bg-[url(/assets/electric_tower.jpg)] heading-wrapper">
-          <h1 className="heading"><span className="font-bold">explin</span>solutions<span className="text-green">_</span></h1>
-          <Values />
         </div>
       </header>
     </>

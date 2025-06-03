@@ -8,3 +8,18 @@ input:-webkit-autofill {
   @apply bg-white text-darkGray;
   -webkit-box-shadow: 0 0 0 1000px white inset;
 }
+
+@layer components {
+  .heading-wrapper {
+    @apply relative m-4 min-h-[12rem] bg-cover bg-center rounded-xl 
+    md:min-h-[16rem] 
+    lg:min-h-[24rem] 
+    2xl:m-0 2xl:mr-0;
+  }
+
+  .heading {
+    @apply pt-3 pl-3 text-largeFontSize text-black tracking-wide font-thin
+    md:pt-8 md:pl-6 
+    lg:text-5xl lg:pt-12 lg:pl-16;
+  }
+}
