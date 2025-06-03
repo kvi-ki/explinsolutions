@@ -3,22 +3,16 @@
 import ContactForm from '@/components/contactForm/ContactForm';
 import Contacts from '@/components/contacts/Contacts';
 import Description from '@/components/description/Description';
-import Footer from '@/components/footer/Footer';
-import Header from '@/components/header/Header';
 import Services from '@/components/services/Services';
 import React from 'react';
 
 export default function App() {
   return (
     <>
-      <Header />
-      <main className="2xl:w-10/12 2xl:m-auto">
-        <Description />
-        <Services />
-        <Contacts />
-        <ContactForm />
-      </main>
-      <Footer />
+      <Description />
+      <Services />
+      <Contacts />
+      <ContactForm />
     </>
   );
 }
