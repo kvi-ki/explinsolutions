@@ -17,10 +17,16 @@ export default function Services() {
       </ul> */}
       <ul className="services-list">
         {data.services.data.map((serviceData) => (
-          <li key={serviceData.name} className='bg-white border border-green rounded-xl flex flex-col items-center text-darkGray text-center font-lightWeight justify-around p-8 m-2 w-52 h-52'><img src={serviceData.image} alt="service icon" className="size-8 lg:size-12 lg:mb-4" />
-          <h3 className="service-heading">{serviceData.name}</h3></li>
-        )
-        )}
+          <li
+            key={serviceData.name}
+            className="bg-white border border-green rounded-xl flex flex-col items-center text-darkGray text-center font-lightWeight justify-around p-8 m-2 w-60 h-60"
+          >
+            <img src={serviceData.image} alt="service icon" className="size-12" />
+            <h3 className="text-center text-wrap font-normal text-baseFontSize mb-8;">
+              {serviceData.name}
+            </h3>
+          </li>
+        ))}
       </ul>
     </section>
   );
