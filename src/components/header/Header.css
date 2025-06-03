@@ -9,7 +9,7 @@
   }
 
   .heading {
-    @apply pt-3 pl-3 text-largeFontSize text-white tracking-wide font-thin
+    @apply pt-3 pl-3 text-largeFontSize text-black tracking-wide font-thin
     md:pt-8 md:pl-6 
     lg:text-5xl lg:pt-12 lg:pl-16;
   }

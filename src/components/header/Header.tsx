@@ -33,7 +33,7 @@ export default function Header() {
           <Menu />
         </div>
         <div className="bg-[url(/assets/electric_tower.jpg)] heading-wrapper">
-          <h1 className="heading">Explinsolutions_</h1>
+          <h1 className="heading"><span className="font-bold">explin</span>solutions<span className="text-green">_</span></h1>
           <Values />
         </div>
       </header>
