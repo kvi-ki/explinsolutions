@@ -66,13 +66,13 @@ export default function Menu() {
             </Link>
           </li>
           <li>
-            <a
+          <Link
               aria-label="Go to contact details section"
-              href="#contacts"
+              href="/donde-estamos"
               onClick={closeMenu}
             >
               Dónde estamos
-            </a>
+            </Link>
           </li>
           <li>
             <Link
