@@ -11,8 +11,8 @@ export default function ServicesPage() {
         para sus diversas necesidades
       </h2>
       <ul className="flex flex-col items-center">
-        {data.services.data.map((serviceData) => (
-          <Service key={serviceData.name} serviceData={serviceData} />
+        {data.services.data.map((serviceData, index) => (
+          <Service key={serviceData.name} index={index} serviceData={serviceData} />
         ))}
       </ul>
     </section>
