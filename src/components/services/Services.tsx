@@ -1,3 +1,4 @@
+import { slugify } from '@/utils/slugify';
 import data from '../../data.json';
 import './Services.css';
 import Link from 'next/link';
@@ -12,10 +13,10 @@ export default function Services() {
       </h2>
       <ul className="services-list">
         {data.services.data.map((serviceData) => (
-          <Link href={`/servicios#${serviceData.name}`}>
+          <Link href={`/servicios#${slugify(serviceData.name)}`}>
             <li
               key={serviceData.name}
-              className="bg-white border border-green rounded-xl flex flex-col items-center text-darkGray text-center font-lightWeight justify-around p-8 m-2 w-60 h-60"
+              className="bg-white border border-green rounded-xl flex flex-col items-center text-darkGray text-center font-lightWeight justify-around p-8 m-2 w-60 h-60 transition duration-150 hover:text-green hover:scale-105"
             >
               <img src={serviceData.image} alt="service icon" className="size-12" />
               <h3 className="text-center text-wrap font-normal text-baseFontSize mb-8">

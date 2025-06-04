@@ -1,6 +1,7 @@
 import AnimatedService from '@/utils/AnimatedService';
 import { motion } from 'framer-motion';
 import './Service.css';
+import { slugify } from '@/utils/slugify';
 
 export type ServiceProps = {
   name: string;
@@ -18,7 +19,7 @@ export default function Service({
   return (
     <AnimatedService>
       <li
-        id={serviceData.name}
+        id={slugify(serviceData.name)}
         className={`service-item ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
       >
         <div className="md:w-2/5">
