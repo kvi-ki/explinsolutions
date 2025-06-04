@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body id="home" className="font-body h-full">
         <Header />
-        <main className="2xl:w-10/12 2xl:m-auto">
+        <main className="pt-20 2xl:w-10/12 2xl:m-auto">
           {children}
           <Footer />
         </main>

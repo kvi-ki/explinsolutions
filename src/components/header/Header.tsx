@@ -7,8 +7,8 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <>
-      <header className="min-w-[8rem] 2xl:w-10/12 2xl:m-auto">
-        <div className="h-10 m-4 flex justify-between items-center 2xl:ml-0 2xl:mr-0">
+      <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
+        <div className="w-full mx-auto h-10 my-4 px-4 flex justify-between items-center 2xl:px-0 2xl:w-10/12">
           <Link aria-label="Go to home page" href="/" className="size-10">
             <img src="/favicon.png" alt="Explinsolutions label" />
           </Link>
