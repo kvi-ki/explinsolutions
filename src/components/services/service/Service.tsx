@@ -17,7 +17,10 @@ export default function Service({
 }) {
   return (
     <AnimatedService>
-      <li className={`service-item ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+      <li
+        id={serviceData.name}
+        className={`service-item ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
+      >
         <div className="md:w-2/5">
           <img
             src={serviceData.image}
