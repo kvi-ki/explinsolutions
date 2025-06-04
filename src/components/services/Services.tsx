@@ -13,7 +13,10 @@ export default function Services() {
       </h2>
       <ul className="services-list">
         {data.services.data.map((serviceData) => (
-          <Link href={`/servicios#${slugify(serviceData.name)}`}>
+          <Link
+            key={serviceData.name}
+            href={`/servicios#${slugify(serviceData.name)}`}
+          >
             <li
               key={serviceData.name}
               className="bg-white border border-green rounded-xl flex flex-col items-center text-darkGray text-center font-lightWeight justify-around p-8 m-2 w-60 h-60 transition duration-150 hover:text-green hover:scale-105"
