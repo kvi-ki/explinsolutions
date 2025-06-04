@@ -18,7 +18,7 @@ export default function Service({
   return (
     <AnimatedService>
       <li className={`service-item ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-        <div className="md:w-4/6">
+        <div className="md:w-2/5">
           <img
             src={serviceData.image}
             alt="service icon"
@@ -36,9 +36,7 @@ export default function Service({
         <motion.img
           src="/service-images/machine.png"
           alt="machine"
-          width={360}
-          height={150}
-          className="bg-lightGray rounded-lg md:m-4"
+          className="bg-lightGray rounded-lg w-full md:w-2/5 md:m-4"
           whileHover={{ scale: 1.06 }}
           transition={{ duration: 0.3 }}
         />
