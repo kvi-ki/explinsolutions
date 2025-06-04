@@ -33,13 +33,21 @@ export default function Menu() {
 
   return (
     <nav className="relative">
-      <button type="button" onClick={toggleMenu} className={hiddenIfScreenSizeIsMedium}>
+      <button
+        type="button"
+        onClick={toggleMenu}
+        className={hiddenIfScreenSizeIsMedium}
+      >
         <FontAwesomeIcon icon={faBars} className="size-6 text-green" />
       </button>
       <div
         className={`${mediumScreenSize ? '' : `list-container ${menuIsOpen ? 'translate-x-0' : 'translate-x-full'}`}`}
       >
-        <button type="button" onClick={toggleMenu} className={hiddenIfScreenSizeIsMedium}>
+        <button
+          type="button"
+          onClick={toggleMenu}
+          className={hiddenIfScreenSizeIsMedium}
+        >
           <FontAwesomeIcon icon={faXmark} className="size-6 text-darkGray" />
         </button>
         <ul className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}>
@@ -49,19 +57,31 @@ export default function Menu() {
             </Link>
           </li>
           <li>
-            <Link aria-label="Go to services section" href="/servicios" onClick={closeMenu}>
+            <Link
+              aria-label="Go to services section"
+              href="/servicios"
+              onClick={closeMenu}
+            >
               Servicios
             </Link>
           </li>
           <li>
-            <a aria-label="Go to contact details section" href="#contacts" onClick={closeMenu}>
+            <a
+              aria-label="Go to contact details section"
+              href="#contacts"
+              onClick={closeMenu}
+            >
               Dónde estamos
             </a>
           </li>
           <li>
-            <a aria-label="Go to contact-form" href="#contact-form" onClick={closeMenu}>
+            <Link
+              aria-label="Go to contact-form"
+              href="/contacto"
+              onClick={closeMenu}
+            >
               Contacto
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
