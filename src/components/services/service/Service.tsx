@@ -1,6 +1,6 @@
 import AnimatedService from '@/utils/AnimatedService';
+import { motion } from 'framer-motion';
 import './Service.css';
-import Image from 'next/image';
 
 export type ServiceProps = {
   name: string;
@@ -33,12 +33,14 @@ export default function Service({
             ))}
           </ul>
         </div>
-        <Image
+        <motion.img
           src="/service-images/machine.png"
           alt="machine"
-          width={400}
-          height={200}
-          className="bg-lightGray rounded-lg md:ml-4"
+          width={360}
+          height={150}
+          className="bg-lightGray rounded-lg md:m-4"
+          whileHover={{ scale: 1.06 }}
+          transition={{ duration: 0.3 }}
         />
       </li>
     </AnimatedService>
