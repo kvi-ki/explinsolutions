@@ -1,4 +1,3 @@
-import Service from './service/Service';
 import data from '../../data.json';
 import './Services.css';
 import Link from 'next/link';
@@ -11,11 +10,6 @@ export default function Services() {
         <br />
         &nbsp; para sus diversas necesidades
       </h2>
-      {/* <ul className="services-list">
-        {data.services.data.map((serviceData) => (
-          <Service key={serviceData.name} serviceData={serviceData} />
-        ))}
-      </ul> */}
       <ul className="services-list">
         {data.services.data.map((serviceData) => (
           <Link href={`/servicios#${serviceData.name}`}>
