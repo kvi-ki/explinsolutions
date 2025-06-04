@@ -1,14 +1,30 @@
+'use client';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Menu from '../menu/Menu';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      <header className="w-full fixed top-0 left-0 z-50 bg-white shadow-md">
-        <div className="w-full mx-auto h-10 my-4 px-4 flex justify-between items-center 2xl:px-0 2xl:w-10/12">
+      <header
+        className={`w-full fixed top-0 left-0 z-50 bg-white ${scrolled ? 'shadow-md' : ''}`}
+      >
+        <div className="w-full mx-auto h-12 my-4 px-4 flex justify-between items-center 2xl:px-0 2xl:w-10/12">
           <Link aria-label="Go to home page" href="/" className="size-10">
             <img src="/favicon.png" alt="Explinsolutions label" />
           </Link>
