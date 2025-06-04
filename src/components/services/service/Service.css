@@ -2,7 +2,7 @@
 
 @layer components {
   .service-item {
-    @apply bg-white text-darkGray font-lightWeight p-8 my-6 md:flex md:justify-around md:items-center;
+    @apply border-b-2 border-green bg-white text-darkGray font-lightWeight p-14 md:flex md:justify-around md:items-center;
   }
   .service-heading {
     @apply text-center text-wrap font-normal text-baseFontSize mb-4;
