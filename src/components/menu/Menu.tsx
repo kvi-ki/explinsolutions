@@ -38,7 +38,7 @@ export default function Menu() {
         onClick={toggleMenu}
         className={hiddenIfScreenSizeIsMedium}
       >
-        <FontAwesomeIcon icon={faBars} className="size-6 text-green" />
+        <FontAwesomeIcon icon={faBars} className="size-10 text-green" />
       </button>
       <div
         className={`${mediumScreenSize ? '' : `list-container ${menuIsOpen ? 'translate-x-0' : 'translate-x-full'}`}`}
