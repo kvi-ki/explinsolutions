@@ -3,7 +3,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
-import './Menu.css';
 import Link from 'next/link';
 
 export default function Menu() {
@@ -38,25 +37,34 @@ export default function Menu() {
         onClick={toggleMenu}
         className={hiddenIfScreenSizeIsMedium}
       >
-        <FontAwesomeIcon icon={faBars} className="size-10 text-green" />
+        <FontAwesomeIcon
+          icon={faBars}
+          className="text-3xl text-accent cursor-pointer"
+        />
       </button>
       <div
-        className={`${mediumScreenSize ? '' : `list-container ${menuIsOpen ? 'translate-x-0' : 'translate-x-full'}`}`}
+        className={`${mediumScreenSize ? '' : `backdrop-blur-3xl flex flex-col items-start gap-10 pt-10 pl-10 fixed top-0 right-0 h-full w-52 z-50 transition-transform duration-500 ease-out ${menuIsOpen ? 'translate-x-0' : 'translate-x-full'}`}`}
       >
         <button
           type="button"
           onClick={toggleMenu}
           className={hiddenIfScreenSizeIsMedium}
         >
-          <FontAwesomeIcon icon={faXmark} className="size-6 text-darkGray" />
+          <FontAwesomeIcon icon={faXmark} className="size-6 text-text" />
         </button>
-        <ul className={`${mediumScreenSize ? 'menu-list-medium' : 'menu-list'}`}>
-          <li>
+        <ul
+          className={`${mediumScreenSize ? 'flex justify-around gap-10 lg:gap-14' : 'flex flex-col gap-6 w-full'}`}
+        >
+          <li
+            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
+          >
             <Link aria-label="Go to home page" href="/" onClick={closeMenu}>
               Inicio
             </Link>
           </li>
-          <li>
+          <li
+            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
+          >
             <Link
               aria-label="Go to services section"
               href="/servicios"
@@ -65,8 +73,10 @@ export default function Menu() {
               Servicios
             </Link>
           </li>
-          <li>
-          <Link
+          <li
+            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
+          >
+            <Link
               aria-label="Go to contact details section"
               href="/donde-estamos"
               onClick={closeMenu}
@@ -74,7 +84,9 @@ export default function Menu() {
               Dónde estamos
             </Link>
           </li>
-          <li>
+          <li
+            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
+          >
             <Link
               aria-label="Go to contact-form"
               href="/contacto"

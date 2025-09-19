@@ -10,7 +10,12 @@ export default function ContactForm() {
 
     if (form.current) {
       emailjs
-        .sendForm('service_7gulyn7', 'template_0obqap3', form.current, 'x5pEv8LMw4oFsjZl9')
+        .sendForm(
+          'service_7gulyn7',
+          'template_0obqap3',
+          form.current,
+          'x5pEv8LMw4oFsjZl9'
+        )
         .then(
           (response) => {
             console.log('SUCCESS!', response.status, response.text);
@@ -32,8 +37,8 @@ export default function ContactForm() {
       onSubmit={sendEmail}
       className="p-8 mb-10 flex flex-col bg-lightGray xl:rounded-xl"
     >
-      <h2 className="pt-6 text-center text-gray text-largeFontSize lg:pt-12">
-        <span className="text-black">Ponte en contacto</span>
+      <h2 className="pt-6 text-center text-gray text-2xl lg:pt-12">
+        <span className="text-blackColor">Ponte en contacto</span>
         <br />
         con nosotros
       </h2>
@@ -76,7 +81,9 @@ export default function ContactForm() {
           />
         </div>
         <div className="text-right">
-          <button className="submit-button">Enviar</button>
+          <button className="w-32 p-3 rounded-xl border border-accent bg-accent text-whiteColor font-light tracking-widest cursor-pointer hover:bg-accent-on-hover">
+            Enviar
+          </button>
         </div>
       </section>
     </form>

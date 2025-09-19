@@ -22,30 +22,34 @@ export default function Header() {
   return (
     <>
       <header
-        className={`w-full fixed top-0 left-0 z-50 bg-white ${scrolled ? 'shadow-md' : ''}`}
+        className={`w-full fixed top-0 left-0 z-50 bg-whiteColor ${scrolled ? 'shadow-md' : ''}`}
       >
-        <div className="w-full mx-auto h-12 my-4 px-4 flex justify-between items-center 2xl:px-0 2xl:w-10/12">
+        <div className="w-full mx-auto h-8 my-4 px-4 flex justify-between items-center 2xl:px-0 2xl:w-10/12">
           <Link aria-label="Go to home page" href="/" className="size-14">
             <img src="/favicon.png" alt="Explinsolutions label" />
           </Link>
 
-          <div className="w-40 flex justify-between items-center md:order-3">
+          <div className="h-full w-40 flex justify-between items-center md:order-3">
             <a
               aria-label="Chat on WhatsApp"
               href="https://wa.me/34619792023"
               target="_blank"
+              className=""
             >
               <FontAwesomeIcon
                 icon={faWhatsapp}
-                className="text-green size-7 rounded-full hover:bg-green hover:text-white"
+                className="text-accent text-[1.5rem] rounded-full hover:bg-accent hover:text-whiteColor"
               />
             </a>
             <a
               aria-label="Call by phone"
               href="tel:+34619792023"
-              className="text-gray hover:text-green"
+              className="text-gray hover:text-accent"
             >
-              <FontAwesomeIcon icon={faPhone} className="text-green pr-1 size-5" />
+              <FontAwesomeIcon
+                icon={faPhone}
+                className="text-accent pr-0.5 text-[1.3rem]"
+              />
               619 792 023
             </a>
           </div>

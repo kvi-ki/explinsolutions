@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneFlip, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPhoneFlip,
+  faEnvelope,
+  faLocationDot
+} from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
@@ -18,8 +22,10 @@ export type ContactProps = {
 };
 
 export default function Contact({ contact }: { contact: ContactProps }) {
-  const linkToOpenInNewTab = contact.icon === 'faLocationDot' || contact.icon === 'faWhatsapp';
-  const iconColor = contact.icon === 'faWhatsapp' ? 'bg-green text-white' : 'text-green';
+  const linkToOpenInNewTab =
+    contact.icon === 'faLocationDot' || contact.icon === 'faWhatsapp';
+  const iconColor =
+    contact.icon === 'faWhatsapp' ? 'bg-accent text-whiteColor' : 'text-accent';
 
   return (
     <li>
@@ -31,9 +37,9 @@ export default function Contact({ contact }: { contact: ContactProps }) {
       >
         <FontAwesomeIcon
           icon={iconMap[contact.icon]}
-          className={`size-6 rounded-full ${iconColor} lg:size-7`}
+          className={`text-xl rounded-full ${iconColor} lg:text-3xl`}
         />
-        <p className="text-sm text-darkGray font-light hover:text-green lg:text-base">
+        <p className="text-sm text-text font-light hover:text-accent lg:text-base">
           {contact.text}
         </p>
       </a>

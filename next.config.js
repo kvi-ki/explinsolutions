@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
-  // distDir: './dist', 
-  experimental: {
-    testProxy: true,
-  },
-}
+  experimental: { testProxy: true },
+  outputFileTracingRoot: __dirname,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

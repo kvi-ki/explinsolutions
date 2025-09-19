@@ -12,9 +12,15 @@ import { StrictMode } from 'react';
 export default function Page() {
   return (
     <StrictMode>
-      <Image src="/banner.jpg" alt={''} width={1500} height={384} />
+      <Image
+        src="/banner-home.svg"
+        alt={''}
+        width={800}
+        height={400}
+        className="w-full rounded-xl"
+      />
       {/* <div className="bg-[url(/assets/electric_tower.jpg)] heading-wrapper">
-    <h1 className="heading"><span className="font-bold">explin</span>solutions<span className="text-green">_</span></h1>
+    <h1 className="heading"><span className="font-bold">explin</span>solutions<span className="text-accent">_</span></h1>
     <Values />
   </div> */}
       <Description />

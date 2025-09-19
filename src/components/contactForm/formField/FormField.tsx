@@ -1,5 +1,3 @@
-import './FormField.css';
-
 export type InputProps = {
   name: string;
   label: string;
@@ -9,14 +7,17 @@ export type InputProps = {
 
 export default function FormField({ inputData }: { inputData: InputProps }) {
   return (
-    <div className="field">
-      <label htmlFor={inputData.name} className="label">
+    <div className="flex flex-col gap-2 my-8">
+      <label
+        htmlFor={inputData.name}
+        className="pl-3 text-text text-base font-light"
+      >
         {inputData.label}
       </label>
 
       {inputData.name === 'message' && (
         <textarea
-          className="input h-44 focus:outline-none focus:border-green"
+          className="p-3 rounded-xl text-base text-text font-light border border-whiteColor bg-whiteColor h-44 focus:outline-none focus:border-accent"
           id={inputData.name}
           name={inputData.name}
           placeholder={inputData.placeholder}
@@ -26,7 +27,7 @@ export default function FormField({ inputData }: { inputData: InputProps }) {
 
       {inputData.name !== 'message' && (
         <input
-          className="input focus:outline-none focus:border-green"
+          className="p-3 rounded-xl text-base text-text font-light border border-whiteColor bg-whiteColor focus:outline-none focus:border-accent"
           id={inputData.name}
           name={inputData.name}
           type={inputData.type}
