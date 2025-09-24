@@ -26,7 +26,14 @@ export default function Page() {
       <Description />
       <Services />
       <Contacts />
-      <ContactForm />
+      <section className="bg-lightGray mb-10 flex flex-col items-center xl:rounded-xl">
+        <h2 className="pt-6 text-center text-gray text-2xl lg:pt-12">
+          <span className="text-blackColor">Ponte en contacto</span>
+          <br />
+          con nosotros
+        </h2>
+        <ContactForm />
+      </section>
     </StrictMode>
   );
 }

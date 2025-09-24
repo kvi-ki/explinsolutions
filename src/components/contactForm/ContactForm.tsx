@@ -35,15 +35,10 @@ export default function ContactForm() {
       id="contact-form"
       ref={form}
       onSubmit={sendEmail}
-      className="p-8 mb-10 flex flex-col bg-lightGray xl:rounded-xl"
+      className="p-8 mb-10 flex flex-col xl:p-0"
     >
-      <h2 className="pt-6 text-center text-gray text-2xl lg:pt-12">
-        <span className="text-blackColor">Ponte en contacto</span>
-        <br />
-        con nosotros
-      </h2>
-      <section className="py-5 mx-auto w-full md:w-5/6 lg:w-5/12">
-        <div className="">
+      <div className="py-5 w-xs lg:w-xl">
+        <div className="flex flex-col gap-8">
           <FormField
             inputData={{
               name: 'name',
@@ -80,12 +75,12 @@ export default function ContactForm() {
             }}
           />
         </div>
-        <div className="text-right">
+        <div className="text-right mt-8">
           <button className="w-32 p-3 rounded-xl border border-accent bg-accent text-whiteColor font-light tracking-widest cursor-pointer hover:bg-accent-on-hover">
             Enviar
           </button>
         </div>
-      </section>
+      </div>
     </form>
   );
 }

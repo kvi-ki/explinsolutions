@@ -7,7 +7,7 @@ export type InputProps = {
 
 export default function FormField({ inputData }: { inputData: InputProps }) {
   return (
-    <div className="flex flex-col gap-2 my-8">
+    <div className="flex flex-col gap-2">
       <label
         htmlFor={inputData.name}
         className="pl-3 text-text text-base font-light"
