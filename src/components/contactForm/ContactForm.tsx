@@ -76,7 +76,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="text-right mt-8">
-          <button className="w-32 p-3 rounded-xl border border-accent bg-accent text-whiteColor font-light tracking-widest cursor-pointer hover:bg-accent-on-hover">
+          <button className="w-32 p-3 rounded-xl border border-accent bg-accent text-whiteColor font-bold tracking-widest cursor-pointer hover:bg-accent-on-hover">
             Enviar
           </button>
         </div>

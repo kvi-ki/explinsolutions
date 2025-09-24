@@ -16,7 +16,7 @@ export default function Footer() {
             <img
               src="/favicon.png"
               alt="Explinsolutions label"
-              className="size-7 rounded-full"
+              className="size-9 rounded-full"
             />
             <p className="text-whiteColor font-extralight tracking-wide text-2xl">
               Explinsolutions

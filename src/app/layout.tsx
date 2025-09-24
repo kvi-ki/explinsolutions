@@ -4,7 +4,9 @@ import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 
 export const metadata: Metadata = {
-  title: 'Explinsolutions'
+  title: 'Explinsolutions',
+  description:
+    'Ingeniería industrial especializada en automatización y sistemas eléctricos'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
