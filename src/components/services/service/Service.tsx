@@ -59,7 +59,7 @@ export default function Service({
           </ul>
         </div>
         <motion.img
-          src="/service-images/machine.png"
+          src="/service-images/title2.jpg"
           alt="machine"
           className="bg-lightGray rounded-xl w-full md:w-2/5 md:m-4"
           whileHover={{ scale: 1.06 }}
