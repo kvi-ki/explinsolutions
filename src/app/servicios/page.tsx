@@ -10,11 +10,9 @@ export default function ServicesPage() {
         <span className="text-blackColor">Servicio de confianza,</span> <br />
         para sus diversas necesidades
       </h2>
-      <ul className="flex flex-col items-center">
-        {data.services.data.map((serviceData, index) => (
-          <Service key={serviceData.name} index={index} serviceData={serviceData} />
-        ))}
-      </ul>
+      {data.services.data.map((serviceData, index) => (
+        <Service key={serviceData.name} index={index} serviceData={serviceData} />
+      ))}
     </section>
   );
 }

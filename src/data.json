@@ -18,45 +18,44 @@
   "services": {
     "data": [
       {
-        "name": "Servicios de Ingeniería Eléctrica Industrial",
-        "image": "/engineering-service.png",
-        "sections": [
-          "En explinsolutions_ ofrecemos soluciones completas de automatización y control industrial, cubriendo todas las fases del proyecto: desde la ingeniería inicial hasta la implantación final en casa del cliente.",
-          "Gracias a nuestro enfoque integral y a un equipo técnico especializado, somos capaces de diseñar, programar, fabricar e instalar sistemas eléctricos industriales totalmente adaptados a cada necesidad."
-        ]
-      },
-      {
-        "name": "Oficina Técnica y Diseño Eléctrico",
+        "name": "Título 1",
         "image": "/installation-service.png",
-        "sections": [
-          "Nuestra sede en Cabrera de Mar (Barcelona) es el centro donde se desarolla toda la parte de ingeniería. Contamos con una oficina técnica especialozada en el diseño de esquemas eléctricos de potencia y control, utilizando herramientas de alto nivel como SolidWorks Electrical.",
-          "Desde esta fase inicial aseguramos que cada solución esté diseñada bajo normativa, optimizando tanto el rendimiento técnico como el montaje posterior."
-        ]
+        "sections": {
+          "firstSection": {
+            "title": "Oficina Técnica y Diseño Eléctrico",
+            "description": [
+              "Nuestra sede en Cabrera de Mar (Barcelona) es el centro donde se desarrolla toda la parte de ingeniería. Contamos con una oficina técnica especializada en el diseño de esquemas eléctricos de potencia y control, utilizando herramientas de alto nivel como SolidWorks Electrical.",
+              "Desde esta fase inicial aseguramos que cada solución esté diseñada bajo normativa, optimizando tanto el rendimiento técnico como el montaje posterior."
+            ]
+          },
+          "secondSection": {
+            "title": "Automatización y Programación de PLC",
+            "description": [
+              "Desarrollamos sistemas de automatización industrial utilizando PLC de Siemens y Omron, así como pantallas HMI y sistemas de supervisión. Nos adaptamos a la arquitectura y complejidad del proyecto, garantizando siempre un control eficiente, preciso y fiable.",
+              "Nuestra experiencia abarca desde automatización de maquinaria hasta procesos industriales más complejos en entornos productivos."
+            ]
+          }
+        }
       },
       {
-        "name": "Automatización y Progranación de PLC",
+        "name": "Título 2",
         "image": "/civil-service.png",
-        "sections": [
-          "Desarrollamos sistemas de automatización industrial utilizando PLC de Siemens y Omron, así como pantallas HMI y sistemas de supervisión. Nos adaptamos a la arquitectura y complejidad del proyecto, garantizando siempre un control eficiente, preciso y fiable.",
-          "Nuestra experiencia abarca desde automatización de maquinaria hasta procesos industriales más complejos en entornos productivos."
-        ]
-      },
-      {
-        "name": "Fabricación de Armarios Eléctricos",
-        "image": "/civil-service.png",
-        "sections": [
-          "Diseñamos y fabricamos cuadros eléctricos de control y distribución en nuestras propias instalaciones, lo que nos permite tener un control total sobre la calidad y los plazos.",
-          "Trabajamos habitualmente con envolventes Rittal y Schneider, seleccionando la mejor opción según la arquitectura del proyecto. También integramos variadores de frecuencia Parker o Control Techniques, entre otras marcas, siempre en función de los requerimientos del cliente.",
-          "Cada armario se prueba antes de su instalación para garantizar un funcionamiento seguro y fiable."
-        ]
-      },
-      {
-        "name": "Implantación y Puestas en Marcha",
-        "image": "/civil-service.png",
-        "sections": [
-          "Llevamos a cabo la implantación completa en casa del cliente, ya sea un fabricante de maquinaria o un usuario final. Nuestro equipo técnico se encarga del montaje, interconexión eléctrica y puesta en marcha de los armarios eléctricos con la máquina o instalación.",
-          "Trabajamos con agilidad y máxima coordinación para asegurar una integración sin errores y en los tiempos establecidos."
-        ]
+        "sections": {
+          "firstSection": {
+            "title": "Fabricación de Armarios Eléctricos",
+            "description": [
+              "Diseñamos y fabricamos cuadros eléctricos de control y distribución en nuestras propias instalaciones, lo que nos permite tener un control total sobre la calidad y los plazos.",
+              "Trabajamos habitualmente con envolventes Rittal y Schneider, seleccionando la mejor opción según la arquitectura del proyecto. También integramos variadores de frecuencia Parker o Control Techniques, entre otras marcas, siempre en función de los requerimientos del cliente. Cada armario se prueba antes de su instalación para garantizar un funcionamiento seguro y fiable."
+            ]
+          },
+          "secondSection": {
+            "title": "Implantación y Puesta en Marcha",
+            "description": [
+              "Llevamos a cabo la implantación completa en casa del cliente, ya sea un fabricante de maquinaria o un usuario final. Nuestro equipo técnico se encarga del montaje, interconexión eléctrica y puesta en marcha de los armarios eléctricos con la máquina o instalación.",
+              "Trabajamos con agilidad y máxima coordinación para asegurar una integración sin errores y en los tiempos establecidos."
+            ]
+          }
+        }
       }
     ]
   },
