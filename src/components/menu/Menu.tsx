@@ -73,17 +73,31 @@ export default function Menu() {
               Servicios
             </Link>
           </li>
+
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
             <Link
               aria-label="Go to contact details section"
-              href="/donde-estamos"
+              href="/"
               onClick={closeMenu}
             >
-              Dónde estamos
+              Blog
             </Link>
           </li>
+
+          <li
+            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
+          >
+            <Link
+              aria-label="Go to contact details section"
+              href="/"
+              onClick={closeMenu}
+            >
+              Quienes Somos
+            </Link>
+          </li>
+
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
