@@ -24,7 +24,7 @@ export default function Header() {
       <header
         className={`w-full fixed top-0 left-0 z-50 bg-whiteColor ${scrolled ? 'shadow-md' : ''}`}
       >
-        <div className="w-full mx-auto h-8 my-4 p-4 flex justify-between items-center 2xl:px-2 2xl:w-10/12">
+        <div className="w-full mx-auto h-8 my-4 p-4 flex justify-between items-center lg:px-20 2xl:w-10/12">
           <Link aria-label="Go to home page" href="/" className="size-10">
             <img src="/favicon.png" alt="Explinsolutions label" />
           </Link>
