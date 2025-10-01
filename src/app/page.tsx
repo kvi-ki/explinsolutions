@@ -17,6 +17,7 @@ export default function Page() {
         alt={''}
         width={800}
         height={400}
+        priority
         className="w-full rounded-xl"
       />
       {/* <div className="bg-[url(/assets/electric_tower.jpg)] heading-wrapper">
