@@ -17,6 +17,7 @@ export default function Page() {
         alt="Homepage banner with product showcase"
         width={800}
         height={400}
+        sizes="100vw"
         priority
         className="w-full rounded-xl"
       />
