@@ -8,7 +8,7 @@ export default function FirstPost() {
           className="w-[30rem] h-[20rem] object-cover"
           alt="Post name image"
         ></img>
-        <p className="text-text">
+        <p className="text-text text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it to
@@ -18,7 +18,7 @@ export default function FirstPost() {
           containing Lorem Ipsum passages, and more recently with desktop publishing
           software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-        <p className="text-text">
+        <p className="text-text text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it to
@@ -28,7 +28,7 @@ export default function FirstPost() {
           containing Lorem Ipsum passages, and more recently with desktop publishing
           software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-        <p className="text-text">
+        <p className="text-text text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it to
