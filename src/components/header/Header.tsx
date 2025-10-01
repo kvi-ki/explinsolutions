@@ -26,7 +26,7 @@ export default function Header() {
       >
         <div className="w-full mx-auto h-8 my-4 p-4 flex justify-between items-center 2xl:px-2 2xl:w-10/12">
           <Link aria-label="Go to home page" href="/" className="size-10">
-            <img src="/favicon.png" alt="Explinsolutions label" />
+            <img src="/favicon.webp" alt="Explinsolutions label" />
           </Link>
 
           <div className="h-full w-40 flex justify-between items-center md:order-3">

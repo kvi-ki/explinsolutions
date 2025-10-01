@@ -12,12 +12,12 @@ export default function Footer() {
     <footer className="h-80 pt-12 pl-4 pr-4 pb-12 bg-text md:pl-8 md:pr-8 2xl:flex justify-center 2xl:pl-0 2xl:pr-0 2xl:rounded-tl-xl 2xl:rounded-tr-xl">
       <div className="grid md:grid-cols-2 gap-x-8 gap-y-8 2xl:w-10/12">
         <section className="w-52 flex justify-between">
-          <Link aria-label="Go to home page" href="/" className="flex gap-3">
-            <img
-              src="/favicon.png"
-              alt="Explinsolutions label"
-              className="size-9 rounded-full"
-            />
+          <Link
+            aria-label="Go to home page"
+            href="/"
+            className="flex gap-3 w-10 h-8"
+          >
+            <img src="/favicon.webp" alt="Explinsolutions label" />
             <p className="text-whiteColor font-extralight tracking-wide text-2xl">
               Explinsolutions
             </p>
