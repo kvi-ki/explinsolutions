@@ -34,6 +34,7 @@ export default function Menu() {
     <nav className="relative">
       <button
         type="button"
+        aria-label="Open menu"
         onClick={toggleMenu}
         className={hiddenIfScreenSizeIsMedium}
       >
