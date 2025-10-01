@@ -18,7 +18,7 @@
   "services": {
     "data": [
       {
-        "name": "Título 1",
+        "name": "Automatización industrial",
         "image": "/installation-service.png",
         "sections": {
           "firstSection": {
@@ -38,7 +38,7 @@
         }
       },
       {
-        "name": "Título 2",
+        "name": "Sistemas eléctricos industriales",
         "image": "/civil-service.png",
         "sections": {
           "firstSection": {
