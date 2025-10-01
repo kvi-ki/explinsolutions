@@ -78,8 +78,8 @@ export default function Menu() {
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
             <Link
-              aria-label="Go to contact details section"
-              href="/"
+              aria-label="Go to a blog page"
+              href="/blog"
               onClick={closeMenu}
             >
               Blog
