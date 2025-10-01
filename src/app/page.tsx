@@ -14,7 +14,7 @@ export default function Page() {
     <StrictMode>
       <Image
         src="/banner-home.svg"
-        alt={''}
+        alt="Homepage banner with product showcase"
         width={800}
         height={400}
         priority
