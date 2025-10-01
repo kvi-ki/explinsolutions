@@ -36,7 +36,7 @@ export default function Service({
             </h3>
           </div>
           <ul className="text-base flex flex-col gap-8">
-            <li key={serviceData.image} className="my-4 text-justify space-y-4">
+            <li key={4} className="my-4 text-justify space-y-4">
               <h3 className="text-xl font-medium">
                 {serviceData.sections.firstSection.title}
               </h3>
@@ -46,7 +46,7 @@ export default function Service({
                 ))}
               </ul>
             </li>
-            <li key={serviceData.image} className="my-4 text-justify space-y-4">
+            <li key={5} className="my-4 text-justify space-y-4">
               <h3 className="text-xl font-medium">
                 {serviceData.sections.secondSection.title}
               </h3>

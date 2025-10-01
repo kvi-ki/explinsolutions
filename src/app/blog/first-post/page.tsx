@@ -1,8 +1,13 @@
+'use client';
+
+import AnimatedService from "@/utils/AnimatedService";
+
 export default function FirstPost() {
   return (
-    <div className="bg-lightGray p-20 mb-10 flex flex-col justify-center items-center gap-10 xl:rounded-xl">
+    <div className="bg-lightGray p-10 mb-10 flex flex-col justify-center items-center gap-10 md:p-20 xl:rounded-xl">
       <h1 className="text-4xl">Post Title</h1>
-      <div className="flex flex-col justify-center items-center gap-8">
+      <AnimatedService>
+      <div className="max-w-5xl flex flex-col justify-center items-center gap-8">
         <img
           src="/images/blog/example.jpg"
           className="w-[30rem] h-[20rem] object-cover"
@@ -39,6 +44,7 @@ export default function FirstPost() {
           software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
       </div>
+      </AnimatedService>
     </div>
   );
 }

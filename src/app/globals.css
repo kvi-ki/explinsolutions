@@ -3,7 +3,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-accent: #7dbb4b;
+  --color-accent: #7aba4b;
   --color-accent-on-hover: #70a843;
   --color-text: #4d4e4d;
   --color-gray: #696969;
