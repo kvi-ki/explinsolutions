@@ -1,6 +1,6 @@
 export default function AboutUs() {
   return (
-    <div className="bg-lightGray p-20 my-10 flex flex-col justify-center items-center gap-20 xl:rounded-xl">
+    <div className="bg-lightGray h-[37rem] p-20 my-10 flex flex-col items-center gap-20 xl:rounded-xl">
       <h1 className="text-4xl">Quienes Somos</h1>
       <p className="text-text text-xl">
         Explinsolutions_ es una ingeniería industrial especializada en automatización
