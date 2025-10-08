@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <div className="bg-lightGray h-[39rem] p-20 mb-10 xl:rounded-xl">
       <div className="max-w-5xl mx-auto flex flex-col items-center gap-20">
-        <h1 className="text-4xl">Quienes Somos</h1>
+        <h1 className="text-4xl">Nuestro Equipo</h1>
         <AnimatedService>
           <p className="text-text text-xl">
             Explinsolutions_ es una ingeniería industrial especializada en

@@ -91,7 +91,7 @@ export default function Menu() {
               href="/quienes-somos"
               onClick={closeMenu}
             >
-              Quienes Somos
+              Nuestro Equipo
             </Link>
           </li>
 
