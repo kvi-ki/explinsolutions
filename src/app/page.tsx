@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <StrictMode>
       <Image
-        src="/banner-home.svg"
+        src="/banner.jpg"
         alt="Homepage banner with product showcase"
         width={800}
         height={400}
