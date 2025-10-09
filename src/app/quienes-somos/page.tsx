@@ -1,14 +1,24 @@
 'use client';
 
+import Image from 'next/image';
+
 import AnimatedService from '@/utils/AnimatedService';
 
 export default function AboutUs() {
   return (
     <div className="bg-lightGray p-20 mb-10 xl:rounded-xl">
-      <div className="max-w-5xl mx-auto flex flex-col items-center gap-20">
+      <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
         <h1 className="text-4xl">Nuestro Equipo</h1>
+
+        <Image
+          src="/images/team.webp"
+          alt="Explinsolutions team photo"
+          width={2000}
+          height={400}
+          className="w-full h-70 object-cover object-center rounded-xl"
+        />
         <AnimatedService>
-          <div className="text-text text-xl flex flex-col gap-8">
+          <div className="text-text text-xl flex flex-col gap-8 pt-10">
             <p>
               <b>explinsolutions</b> es una ingeniería industrial especializada en
               <b>automatización y sistemas eléctricos llave en mano</b>.
