@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Menu() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [mediumScreenSize, setMediumScreenSize] = useState(true);
-  const hiddenIfScreenSizeIsMedium = mediumScreenSize ? 'hidden' : '';
+  const hiddenIfScreenSizeIsMedium = mediumScreenSize ? 'hidden' : 'cursor-pointer';
 
   useEffect(() => {
     const updateScreenSize = () => {
