@@ -12,7 +12,7 @@ export default function AboutUs() {
 
         <Image
           src="/images/team.webp"
-          alt="explinsolutions team photo"
+          alt="explinsolutions_ team photo"
           width={2000}
           height={400}
           className="w-full h-70 object-cover object-center rounded-xl"
@@ -20,7 +20,7 @@ export default function AboutUs() {
         <AnimatedService>
           <div className="text-text text-xl flex flex-col gap-8 pt-10">
             <p>
-              <b>explinsolutions</b> es una ingeniería industrial especializada en
+              <b>explinsolutions_</b> es una ingeniería industrial especializada en
               <b>automatización y sistemas eléctricos llave en mano</b>.
             </p>
             <p>

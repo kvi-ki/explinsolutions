@@ -17,9 +17,9 @@ export default function Footer() {
             href="/"
             className="flex gap-3 w-10 h-8"
           >
-            <img src="/favicon.png" alt="explinsolutions label" />
+            <img src="/favicon.png" alt="explinsolutions_ label" />
             <p className="text-whiteColor font-extralight tracking-wide text-2xl">
-              explinsolutions
+              explinsolutions_
             </p>
           </Link>
         </section>
