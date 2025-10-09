@@ -6,8 +6,8 @@ export type ServiceProps = {
   name: string;
   image: string;
   sections: {
-    firstSection: { title: string; description: string[] };
-    secondSection: { title: string; description: string[] };
+    firstSection: { title: string; image: string; description: string[] };
+    secondSection: { title: string; image: string; description: string[] };
   };
 };
 
@@ -45,7 +45,7 @@ export default function Service({ serviceData }: { serviceData: ServiceProps }) 
               </ul>
             </div>
             <motion.img
-              src="/service-images/title2.jpg"
+              src={serviceData.sections.firstSection.image}
               alt="machine"
               className="bg-lightGray rounded-xl w-full md:w-1/4 md:m-4"
               whileHover={{ scale: 1.06 }}
@@ -67,7 +67,7 @@ export default function Service({ serviceData }: { serviceData: ServiceProps }) 
               </ul>
             </div>
             <motion.img
-              src="/service-images/title2.jpg"
+              src={serviceData.sections.secondSection.image}
               alt="machine"
               className="bg-lightGray rounded-xl w-full md:w-1/4 md:m-4"
               whileHover={{ scale: 1.06 }}
