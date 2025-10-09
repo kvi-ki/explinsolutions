@@ -12,7 +12,7 @@ export default function AboutUs() {
 
         <Image
           src="/images/team.webp"
-          alt="Explinsolutions team photo"
+          alt="explinsolutions team photo"
           width={2000}
           height={400}
           className="w-full h-70 object-cover object-center rounded-xl"

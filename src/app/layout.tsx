@@ -4,7 +4,7 @@ import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
 
 export const metadata: Metadata = {
-  title: 'Explinsolutions',
+  title: 'explinsolutions',
   description:
     'Ingeniería industrial especializada en automatización y sistemas eléctricos'
 };
