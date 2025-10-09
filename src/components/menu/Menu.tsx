@@ -12,7 +12,7 @@ export default function Menu() {
 
   useEffect(() => {
     const updateScreenSize = () => {
-      setMediumScreenSize(window.innerWidth >= 768 ? true : false);
+      setMediumScreenSize(window.innerWidth >= 1280 ? true : false);
     };
 
     updateScreenSize();
@@ -63,6 +63,19 @@ export default function Menu() {
               Inicio
             </Link>
           </li>
+
+          <li
+            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
+          >
+            <Link
+              aria-label="Go to page about us"
+              href="/quienes-somos"
+              onClick={closeMenu}
+            >
+              Nuestro Equipo
+            </Link>
+          </li>
+
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
@@ -86,12 +99,16 @@ export default function Menu() {
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
-            <Link
-              aria-label="Go to page about us"
-              href="/quienes-somos"
-              onClick={closeMenu}
-            >
-              Nuestro Equipo
+            <Link aria-label="Go to a projects page" href="/" onClick={closeMenu}>
+              Proyectos
+            </Link>
+          </li>
+
+          <li
+            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
+          >
+            <Link aria-label="Go to a present page" href="/" onClick={closeMenu}>
+              Actualidad
             </Link>
           </li>
 

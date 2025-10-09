@@ -29,7 +29,7 @@ export default function Header() {
             <img src="/favicon.png" alt="Explinsolutions label" />
           </Link>
 
-          <div className="h-full w-40 flex justify-between items-center md:order-3">
+          <div className="h-full w-40 flex justify-between items-center xl:order-3">
             <a
               aria-label="Chat on WhatsApp"
               href="https://wa.me/34619792023"
