@@ -10,7 +10,7 @@ export default function AboutUs() {
         <AnimatedService>
           <div className="text-text text-xl flex flex-col gap-8">
             <p>
-              <b>Explinsolutions_</b> es una ingeniería industrial especializada en
+              <b>explinsolutions</b> es una ingeniería industrial especializada en
               <b>automatización y sistemas eléctricos llave en mano</b>.
             </p>
             <p>
