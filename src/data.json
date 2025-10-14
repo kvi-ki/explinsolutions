@@ -66,11 +66,6 @@
   "contacts": {
     "data": [
       {
-        "icon": "faLocationDot",
-        "text": "Camí del Mig, 5, 08349 Cabrera de Mar (BCN)",
-        "link": "https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7"
-      },
-      {
         "icon": "faPhoneFlip",
         "text": "+34 619 792 023",
         "link": "tel:+34619792023"
@@ -84,6 +79,11 @@
         "icon": "faEnvelope",
         "text": "administracion@explinsolutions.com",
         "link": "mailto:administracion@explinsolutions.com"
+      },
+      {
+        "icon": "faLocationDot",
+        "text": "Camí del Mig, 5, 08349 Cabrera de Mar (BCN)",
+        "link": "https://maps.app.goo.gl/GPjYNB2FfHXN9B3o7"
       }
     ]
   }
