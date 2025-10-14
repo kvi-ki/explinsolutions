@@ -69,7 +69,7 @@ export default function Menu() {
           >
             <Link
               aria-label="Go to page about us"
-              href="/quienes-somos"
+              href="/nuestro-equipo"
               onClick={closeMenu}
             >
               Nuestro Equipo
