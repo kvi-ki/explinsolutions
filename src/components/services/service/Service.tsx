@@ -47,7 +47,7 @@ export default function Service({ serviceData }: { serviceData: ServiceProps }) 
             <motion.img
               src={serviceData.sections.firstSection.image}
               alt="machine"
-              className="bg-lightGray rounded-xl w-full md:w-1/4 md:m-4"
+              className="rounded-xl w-full md:w-1/4 md:m-4"
               whileHover={{ scale: 1.06 }}
               transition={{ duration: 0.3 }}
             />
@@ -69,7 +69,7 @@ export default function Service({ serviceData }: { serviceData: ServiceProps }) 
             <motion.img
               src={serviceData.sections.secondSection.image}
               alt="machine"
-              className="bg-lightGray rounded-xl w-full md:w-1/4 md:m-4"
+              className="rounded-xl w-full md:w-1/4 md:m-4"
               whileHover={{ scale: 1.06 }}
               transition={{ duration: 0.3 }}
             />
