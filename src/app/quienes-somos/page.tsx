@@ -18,10 +18,10 @@ export default function AboutUs() {
           className="w-full h-70 object-cover object-center rounded-xl"
         />
         <AnimatedService>
-          <div className="text-text text-xl flex flex-col gap-8 pt-10">
+          <div className="text-text text-justify text-xl flex flex-col gap-8 pt-10">
             <p>
-              <b>explinsolutions_</b> es una ingeniería industrial especializada en
-              <b>automatización y sistemas eléctricos llave en mano</b>.
+              <b>explinsolutions_</b> es una ingeniería industrial especializada{' '}
+              <b>en automatización y sistemas eléctricos llave en mano</b>.
             </p>
             <p>
               Acompañamos a cada cliente en todo el proceso:{' '}
