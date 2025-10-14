@@ -7,7 +7,7 @@ import AnimatedService from '@/utils/AnimatedService';
 export default function News() {
   return (
     <div className="bg-lightGray pt-10 my-10 flex flex-col justify-center items-center xl:rounded-xl">
-      <h2 className="text-blackColor text-2xl lg:text-4xl">Actualidad</h2>
+      <h2 className="text-blackColor text-3xl lg:text-4xl">Actualidad</h2>
       <AnimatedService>
         <ul className="p-10 flex flex-wrap justify-center gap-10">
           <li className="shadow-[0_0_10px_rgb(0,0,0,0.09)] rounded-xl transition-transform ease-out duration-300 md:w-sm lg:h-[30rem] hover:scale-105 hover:cursor-pointer">
@@ -16,7 +16,7 @@ export default function News() {
               className="p-8 flex flex-col items-center"
               aria-label="Go to first post page"
             >
-              <h2 className="text-2xl">Post Title</h2>
+              <h3 className="text-2xl">Post Title</h3>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
                   src="/images/news/example.jpg"
@@ -38,7 +38,7 @@ export default function News() {
               className="p-8 flex flex-col items-center"
               aria-label="Go to first post page"
             >
-              <h2 className="text-2xl">Post Title</h2>
+              <h3 className="text-2xl">Post Title</h3>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
                   src="/images/news/example.jpg"
@@ -60,7 +60,7 @@ export default function News() {
               className="p-8 flex flex-col items-center"
               aria-label="Go to first post page"
             >
-              <h2 className="text-2xl">Post Title</h2>
+              <h3 className="text-2xl">Post Title</h3>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
                   src="/images/news/example.jpg"

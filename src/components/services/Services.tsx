@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function Services() {
   return (
-    <section className="mb-10 bg-lightGray p-4 xl:rounded-xl">
-      <h2 className="pt-6 text-center text-blackColor text-2xl lg:pt-12">
+    <section className="mb-10 bg-lightGray p-6 space-y-10 xl:rounded-xl lg:p-8 lg:space-y-20">
+      <h2 className="pt-6 text-center text-blackColor text-3xl lg:pt-12 lg:text-4xl">
         Servicios de Ingeniería Eléctrica
         <br /> Industria Automatización y control industrial llave en mano
       </h2>

@@ -1,7 +1,7 @@
 export default function Description() {
   return (
     <section className="p-[6vw] xl:p-20">
-      <h2 className="text-right lg:text-2xl mb-3">
+      <h2 className="text-right lg:text-3xl mb-3">
         Ingeniería industrial especializada en automatización y sistemas eléctricos
       </h2>
       <p className="text-base font-light text-justify text-text lg:text-2xl">

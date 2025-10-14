@@ -29,7 +29,7 @@ export default function Page() {
       <Services />
       <Contacts />
       <section className="bg-lightGray mb-10 flex flex-col items-center xl:rounded-xl">
-        <h2 className="pt-6 text-center text-gray text-2xl lg:pt-12">
+        <h2 className="py-6 text-center text-gray text-3xl lg:pt-12 lg:text-4xl">
           <span className="text-blackColor">Ponte en contacto</span>
           <br />
           con nosotros
