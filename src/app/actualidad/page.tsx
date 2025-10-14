@@ -4,22 +4,22 @@ import Link from 'next/link';
 
 import AnimatedService from '@/utils/AnimatedService';
 
-export default function Blog() {
+export default function News() {
   return (
     <div className="bg-lightGray pt-10 my-10 flex flex-col justify-center items-center xl:rounded-xl">
-      <h2 className="text-blackColor text-2xl lg:text-4xl">Blog</h2>
+      <h2 className="text-blackColor text-2xl lg:text-4xl">Actualidad</h2>
       <AnimatedService>
         <ul className="p-10 flex flex-wrap justify-center gap-10">
           <li className="shadow-[0_0_10px_rgb(0,0,0,0.09)] rounded-xl transition-transform ease-out duration-300 md:w-sm lg:h-[30rem] hover:scale-105 hover:cursor-pointer">
             <Link
-              href="/blog/first-post"
+              href="/actualidad/first-post"
               className="p-8 flex flex-col items-center"
               aria-label="Go to first post page"
             >
               <h2 className="text-2xl">Post Title</h2>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
-                  src="/images/blog/example.jpg"
+                  src="/images/news/example.jpg"
                   className="w-80 h-60 object-cover"
                   alt="Post name image"
                 ></img>
@@ -34,14 +34,14 @@ export default function Blog() {
 
           <li className="shadow-[0_0_10px_rgb(0,0,0,0.09)] rounded-xl transition-transform ease-out duration-300 md:w-sm lg:h-[30rem] hover:scale-105 hover:cursor-pointer">
             <Link
-              href="/blog/first-post"
+              href="/actualidad/first-post"
               className="p-8 flex flex-col items-center"
               aria-label="Go to first post page"
             >
               <h2 className="text-2xl">Post Title</h2>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
-                  src="/images/blog/example.jpg"
+                  src="/images/news/example.jpg"
                   className="w-80 h-60 object-cover"
                   alt="Post name image"
                 ></img>
@@ -56,14 +56,14 @@ export default function Blog() {
 
           <li className="shadow-[0_0_10px_rgb(0,0,0,0.09)] rounded-xl transition-transform ease-out duration-300 md:w-sm lg:h-[30rem] hover:scale-105 hover:cursor-pointer">
             <Link
-              href="/blog/first-post"
+              href="/actualidad/first-post"
               className="p-8 flex flex-col items-center"
               aria-label="Go to first post page"
             >
               <h2 className="text-2xl">Post Title</h2>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
-                  src="/images/blog/example.jpg"
+                  src="/images/news/example.jpg"
                   className="w-80 h-60 object-cover"
                   alt="Post name image"
                 ></img>

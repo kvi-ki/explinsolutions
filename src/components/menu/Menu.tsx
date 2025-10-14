@@ -91,14 +91,6 @@ export default function Menu() {
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
-            <Link aria-label="Go to a blog page" href="/blog" onClick={closeMenu}>
-              Blog
-            </Link>
-          </li>
-
-          <li
-            className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
-          >
             <Link aria-label="Go to a projects page" href="/" onClick={closeMenu}>
               Proyectos
             </Link>
@@ -107,7 +99,11 @@ export default function Menu() {
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
-            <Link aria-label="Go to a present page" href="/" onClick={closeMenu}>
+            <Link
+              aria-label="Go to a news page"
+              href="/actualidad"
+              onClick={closeMenu}
+            >
               Actualidad
             </Link>
           </li>

@@ -9,7 +9,7 @@ export default function FirstPost() {
       <AnimatedService>
         <div className="max-w-3xl flex flex-col justify-center items-center gap-8">
           <img
-            src="/images/blog/example.jpg"
+            src="/images/news/example.jpg"
             className="w-[30rem] h-[20rem] object-cover"
             alt="Post name image"
           ></img>
