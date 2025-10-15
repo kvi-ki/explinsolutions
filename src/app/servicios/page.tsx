@@ -10,8 +10,8 @@ export default function ServicesPage() {
         <span className="text-blackColor">Servicio de confianza,</span> <br />
         para sus diversas necesidades
       </h2>
-      {data.services.data.map((serviceData) => (
-        <Service key={serviceData.name} serviceData={serviceData} />
+      {data.services.data.map((serviceData, index) => (
+        <Service index={index} key={serviceData.name} serviceData={serviceData} />
       ))}
     </section>
   );

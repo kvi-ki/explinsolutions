@@ -1,6 +1,8 @@
-import AnimatedService from '@/utils/AnimatedService';
+import clsx from 'clsx';
 import { motion } from 'framer-motion';
+
 import { slugify } from '@/utils/slugify';
+import AnimatedService from '@/utils/AnimatedService';
 
 export type ServiceProps = {
   name: string;
@@ -11,12 +13,21 @@ export type ServiceProps = {
   };
 };
 
-export default function Service({ serviceData }: { serviceData: ServiceProps }) {
+export default function Service({
+  serviceData,
+  index
+}: {
+  serviceData: ServiceProps;
+  index: number;
+}) {
   return (
     <AnimatedService>
       <div
         id={slugify(serviceData.name)}
-        className={`scroll-mt-20 border-b-2 border-accent bg-whiteColor text-text text-justify  text-base font-light p-14 xl:scroll-mt-16`}
+        className={clsx(
+          index === 0 ? 'border-b-2 border-accent' : 'border-0',
+          'scroll-mt-20 bg-whiteColor text-text text-justify  text-base font-light p-14 xl:scroll-mt-16'
+        )}
       >
         <div className="flex flex-col gap-2 pb-10">
           <img
