@@ -59,6 +59,7 @@ export default function Menu() {
       >
         <button
           type="button"
+          aria-label="Close menu"
           onClick={toggleMenu}
           className={hiddenIfScreenSizeIsMedium}
         >
