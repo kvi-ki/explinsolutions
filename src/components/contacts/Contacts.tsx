@@ -5,12 +5,12 @@ export default function Contacts() {
   return (
     <section
       id="contacts"
-      className="mb-30 flex flex-col items-center justify-around lg:h-[30rem]"
+      className="flex flex-col items-center justify-around my-10 lg:my-24"
     >
-      <h2 className="pb-6 text-center text-blackColor text-3xl lg:pt-12 lg:text-4xl">
+      <h2 className="text-center text-blackColor text-3xl mb-6 lg:mb-14 lg:text-4xl">
         Dónde Estamos
       </h2>
-      <div className="w-full mb-10 flex flex-col items-center justify-around lg:h-[30rem] lg:flex-row">
+      <div className="w-full flex flex-col items-center justify-around lg:h-[30rem] lg:flex-row">
         <ul>
           {data.contacts.data.map((contact) => (
             <Contact
