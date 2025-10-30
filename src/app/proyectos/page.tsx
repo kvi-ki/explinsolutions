@@ -19,7 +19,7 @@ export default function ProjectsPage() {
               <h3 className="text-2xl">Nombre del Proyecto</h3>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
-                  src="/images/news/example.jpg"
+                  src="/images/projects/example.jpg"
                   className="w-80 h-60 object-cover"
                   alt="Post name image"
                 ></img>
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
               <h3 className="text-2xl">Nombre del Proyecto</h3>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
-                  src="/images/news/example.jpg"
+                  src="/images/projects/example.jpg"
                   className="w-80 h-60 object-cover"
                   alt="Post name image"
                 ></img>
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
               <h3 className="text-2xl">Nombre del Proyecto</h3>
               <div className="flex flex-col justify-center items-center gap-8">
                 <img
-                  src="/images/news/example.jpg"
+                  src="/images/projects/example.jpg"
                   className="w-80 h-60 object-cover"
                   alt="Post name image"
                 ></img>
