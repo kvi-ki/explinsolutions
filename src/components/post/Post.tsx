@@ -60,55 +60,54 @@ export default function Post({ title, imageList, paragraphList }: PostProps) {
   return (
     <>
       <h1 className="text-4xl">{title}</h1>
-      <AnimatedService>
-        <div className="flex flex-col justify-center items-center gap-8">
-          <div className="w-full flex gap-2 items-center md:gap-10">
-            <ArrowButton
-              buttonClass={clsx(
-                'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
-                leftButtonStyle,
-                shortList && 'hidden'
-              )}
-              label="Desplázate a la derecha"
-              iconClass="rotate-180 size-3"
-              handleClick={() => handleScroll(-150)}
-            />
-            <div
-              ref={ref}
+      <div className="flex flex-col justify-center items-center gap-8">
+        <div className="w-full flex gap-2 items-center md:gap-10">
+          <ArrowButton
+            buttonClass={clsx(
+              'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
+              leftButtonStyle,
+              shortList && 'hidden'
+            )}
+            label="Desplázate a la derecha"
+            iconClass="rotate-180 size-3"
+            handleClick={() => handleScroll(-150)}
+          />
+          <div
+            ref={ref}
+            className={clsx(
+              'w-full min-w-0 overflow-x-auto hide-scrollbar whitespace-nowrap',
+              !shortList && 'flex items-center gap-10'
+            )}
+          >
+            <ul
               className={clsx(
-                'w-full min-w-0 overflow-x-auto hide-scrollbar whitespace-nowrap',
-                !shortList && 'flex items-center gap-10'
+                'flex gap-6 justify-start',
+                shortList && 'flex-wrap md:justify-center'
               )}
             >
-              <ul
-                className={clsx(
-                  'flex gap-6 justify-start',
-                  shortList && 'flex-wrap md:justify-center'
-                )}
-              >
-                {imageList.map((image, index) => (
-                  <li key={index} className="flex-shrink-0">
-                    <img
-                      src={image.source}
-                      className="w-[20rem] h-[25rem] object-cover"
-                      alt={image.alt}
-                    ></img>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <ArrowButton
-              buttonClass={clsx(
-                'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
-                rightButtonStyle,
-                shortList && 'hidden'
-              )}
-              label="Desplázate a la izquierda"
-              iconClass="size-3"
-              handleClick={() => handleScroll(150)}
-            />
+              {imageList.map((image, index) => (
+                <li key={index} className="flex-shrink-0">
+                  <img
+                    src={image.source}
+                    className="w-[20rem] h-[25rem] object-cover"
+                    alt={image.alt}
+                  ></img>
+                </li>
+              ))}
+            </ul>
           </div>
-
+          <ArrowButton
+            buttonClass={clsx(
+              'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
+              rightButtonStyle,
+              shortList && 'hidden'
+            )}
+            label="Desplázate a la izquierda"
+            iconClass="size-3"
+            handleClick={() => handleScroll(150)}
+          />
+        </div>
+        <AnimatedService>
           <ul className="max-w-4xl space-y-10">
             {paragraphList.map((paragraph, index) => (
               <li key={index}>
@@ -116,8 +115,8 @@ export default function Post({ title, imageList, paragraphList }: PostProps) {
               </li>
             ))}
           </ul>
-        </div>
-      </AnimatedService>
+        </AnimatedService>
+      </div>
     </>
   );
 }
