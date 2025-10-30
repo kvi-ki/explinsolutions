@@ -132,7 +132,11 @@ export default function Menu() {
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
-            <Link aria-label="Go to a projects page" href="/" onClick={closeMenu}>
+            <Link
+              aria-label="Go to a projects page"
+              href="/proyectos"
+              onClick={closeMenu}
+            >
               Proyectos
             </Link>
           </li>
