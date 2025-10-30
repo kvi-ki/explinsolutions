@@ -24,6 +24,8 @@ export default function Post({ title, imageList, paragraphList }: PostProps) {
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
 
+  const shortList = imageList.length <= 2;
+
   const leftButtonStyle = isAtStart
     ? inactiveScrollButtonStyle
     : activeScrollButtonStyle;
@@ -64,7 +66,8 @@ export default function Post({ title, imageList, paragraphList }: PostProps) {
             <ArrowButton
               buttonClass={clsx(
                 'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
-                leftButtonStyle
+                leftButtonStyle,
+                shortList && 'hidden'
               )}
               label="Desplázate a la derecha"
               iconClass="rotate-180 size-3"
@@ -72,9 +75,17 @@ export default function Post({ title, imageList, paragraphList }: PostProps) {
             />
             <div
               ref={ref}
-              className="w-full min-w-0 overflow-x-auto hide-scrollbar whitespace-nowrap"
+              className={clsx(
+                'w-full min-w-0 overflow-x-auto hide-scrollbar whitespace-nowrap',
+                !shortList && 'flex items-center gap-10'
+              )}
             >
-              <ul className="flex gap-2 md:gap-14">
+              <ul
+                className={clsx(
+                  'flex gap-6 justify-start',
+                  shortList && 'flex-wrap md:justify-center'
+                )}
+              >
                 {imageList.map((image, index) => (
                   <li key={index} className="flex-shrink-0">
                     <img
@@ -89,7 +100,8 @@ export default function Post({ title, imageList, paragraphList }: PostProps) {
             <ArrowButton
               buttonClass={clsx(
                 'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
-                rightButtonStyle
+                rightButtonStyle,
+                shortList && 'hidden'
               )}
               label="Desplázate a la izquierda"
               iconClass="size-3"
