@@ -6,8 +6,7 @@ export default function Services() {
   return (
     <section className="mb-10 bg-lightGray p-6 space-y-10 xl:rounded-xl lg:p-8 lg:space-y-20">
       <h2 className="pt-6 text-center text-blackColor text-3xl lg:pt-12 lg:text-4xl">
-        Servicios de Ingeniería Eléctrica
-        <br /> Industria Automatización y control industrial llave en mano
+        Servicios de ingeniería para la industria
       </h2>
       <ul className="m-8 p-6 flex flex-col items-center justify-center gap-26 md:flex-row  md:flex-wrap">
         {data.services.data.map((serviceData) => (
