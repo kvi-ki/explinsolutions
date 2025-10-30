@@ -15,7 +15,7 @@ export default function ContactPage() {
         con nosotros
       </h2>
       <AnimatedService>
-        <div className="w-full pt-10 flex flex-col gap-40 lg:flex-row lg:items-center">
+        <div className="w-full pt-10 flex flex-col justify-center gap-40 lg:flex-row lg:items-center">
           <div>
             <ul className="flex flex-col items-center">
               {data.contacts.data.map((contact) => (
