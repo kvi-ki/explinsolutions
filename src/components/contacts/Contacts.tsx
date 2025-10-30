@@ -8,7 +8,7 @@ export default function Contacts() {
       className="flex flex-col items-center justify-around my-10 lg:my-24"
     >
       <h2 className="text-center text-blackColor text-3xl mb-6 lg:mb-14 lg:text-4xl">
-        Dónde Estamos
+        Dónde estamos
       </h2>
       <div className="w-full flex flex-col items-center justify-around lg:h-[30rem] lg:flex-row">
         <ul>
