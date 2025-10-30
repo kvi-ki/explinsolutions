@@ -11,6 +11,7 @@ type ImageType = {
 };
 
 type PostProps = {
+  id: string;
   title: string;
   imageList: ImageType[];
   paragraphList: string[];
@@ -19,7 +20,7 @@ type PostProps = {
 const activeScrollButtonStyle = 'border-accent text-accent';
 const inactiveScrollButtonStyle = 'border-[#b3c0ce] text-[#b3c0ce] cursor-default';
 
-export default function Post({ title, imageList, paragraphList }: PostProps) {
+export default function Post({ id, title, imageList, paragraphList }: PostProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
@@ -59,7 +60,9 @@ export default function Post({ title, imageList, paragraphList }: PostProps) {
 
   return (
     <>
-      <h1 className="text-4xl">{title}</h1>
+      <h1 id={id} className="text-4xl">
+        {title}
+      </h1>
       <div className="flex flex-col justify-center items-center gap-8">
         <div className="w-full flex gap-2 items-center md:gap-10">
           <ArrowButton
