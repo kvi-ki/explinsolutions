@@ -25,6 +25,14 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* @layer component {
   .heading-wrapper {
     @apply relative m-4 min-h-[12rem] bg-cover bg-center rounded-xl 
