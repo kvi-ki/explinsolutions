@@ -25,33 +25,35 @@ export default function Service({
       <div
         id={slugify(serviceData.name)}
         className={clsx(
-          index === 0 ? 'border-b-2 border-accent' : 'border-0',
+          index === 0 ? 'border-b-2 border-accent xl:pb-30' : 'border-0 xl:py-30',
           'scroll-mt-20 bg-whiteColor text-text text-justify  text-base font-light p-14 xl:scroll-mt-16'
         )}
       >
-        <div className="flex flex-col gap-2 pb-10">
+        <div className="flex flex-col gap-2 pb-10 xl:pb-20">
           <img
             src={serviceData.image}
             alt="service icon"
             className="size-16 mb-4 mx-auto"
           />
-          <h3 className="text-center text-wrap font-bold text-2xl mb-4">
+          <h3 className="text-center text-wrap font-bold text-2xl mb-4 xl:text-3xl">
             {serviceData.name}
           </h3>
         </div>
 
-        <ul className="flex flex-col gap-20">
+        <ul className="flex flex-col gap-30">
           <li
             key={4}
             className="flex flex-col items-center justify-center gap-10 md:flex-row lg:gap-20"
           >
             <div className="flex flex-col gap-8 lg:w-2/5">
-              <h3 className="text-xl font-medium">
+              <h3 className="text-xl font-medium xl:text-2xl">
                 {serviceData.sections.firstSection.title}
               </h3>
               <ul className="space-y-4">
                 {serviceData.sections.firstSection.description.map((item) => (
-                  <li key={item.slice(0, 8)}>{item}</li>
+                  <li key={item.slice(0, 8)} className="xl:text-lg">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -68,12 +70,14 @@ export default function Service({
             className="flex flex-col items-center justify-center gap-10 md:flex-row-reverse lg:gap-20"
           >
             <div className="flex flex-col gap-8 lg:w-2/5">
-              <h3 className="text-xl font-medium">
+              <h3 className="text-xl font-medium xl:text-2xl">
                 {serviceData.sections.secondSection.title}
               </h3>
               <ul className="space-y-4">
                 {serviceData.sections.secondSection.description.map((item) => (
-                  <li key={item.slice(0, 8)}>{item}</li>
+                  <li key={item.slice(0, 8)} className="xl:text-lg">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
