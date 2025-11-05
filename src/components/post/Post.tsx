@@ -73,18 +73,18 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
             )}
             label="Desplázate a la derecha"
             iconClass="rotate-180 size-3"
-            handleClick={() => handleScroll(-150)}
+            handleClick={() => handleScroll(-440)}
           />
           <div
             ref={ref}
             className={clsx(
-              'w-full min-w-0 overflow-x-auto hide-scrollbar whitespace-nowrap',
+              'py-10 px-4 w-full min-w-0 overflow-x-auto hide-scrollbar whitespace-nowrap',
               !shortList && 'flex items-center gap-10'
             )}
           >
             <ul
               className={clsx(
-                'flex gap-6 justify-start',
+                'flex gap-14 justify-start',
                 shortList && 'flex-wrap md:justify-center'
               )}
             >
@@ -92,7 +92,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
                 <li key={index} className="flex-shrink-0">
                   <img
                     src={image.source}
-                    className="w-[20rem] h-[25rem] object-cover"
+                    className="w-[20rem] h-[25rem] object-cover shadow-[0_0_10px_rgba(0,0,0,0.25),0_0_8px_rgba(255,255,255,0.09)] rounded-xl"
                     alt={image.alt}
                   ></img>
                 </li>
@@ -107,7 +107,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
             )}
             label="Desplázate a la izquierda"
             iconClass="size-3"
-            handleClick={() => handleScroll(150)}
+            handleClick={() => handleScroll(440)}
           />
         </div>
         <AnimatedService>
