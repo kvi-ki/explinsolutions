@@ -62,7 +62,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
 
   return (
     <>
-      <h1 id={id} className="text-4xl">
+      <h1 id={id} className="text-4xl text-center">
         {title}
       </h1>
       <div className="flex flex-col justify-center items-center gap-8">
@@ -117,7 +117,6 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
             {paragraphList.map((paragraph, index) => (
               <li key={index}>
                 <ReactMarkdown
-                  // custom renderers for markdown elements
                   components={{
                     p: ({ children }) => (
                       <p className="text-text text-lg font-light leading-relaxed">
