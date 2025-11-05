@@ -1,6 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
+import ReactMarkdown from 'react-markdown';
 import { useLayoutEffect, useRef, useState } from 'react';
 
 import AnimatedService from '@/utils/AnimatedService';
@@ -115,7 +116,29 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
           <ul className="max-w-4xl space-y-10">
             {paragraphList.map((paragraph, index) => (
               <li key={index}>
-                <p className="text-text text-lg font-light">{paragraph}</p>
+                <ReactMarkdown
+                  // custom renderers for markdown elements
+                  components={{
+                    p: ({ children }) => (
+                      <p className="text-text text-lg font-light leading-relaxed">
+                        {children}
+                      </p>
+                    ),
+                    strong: ({ children }) => (
+                      <strong className="font-semibold text-text">{children}</strong>
+                    ),
+                    ul: ({ children }) => (
+                      <ul className="list-disc ml-6 text-text text-lg font-light space-y-1">
+                        {children}
+                      </ul>
+                    ),
+                    li: ({ children }) => (
+                      <li className="text-text text-lg font-light">{children}</li>
+                    )
+                  }}
+                >
+                  {paragraph}
+                </ReactMarkdown>
               </li>
             ))}
           </ul>
