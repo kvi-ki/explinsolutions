@@ -1,9 +1,10 @@
 'use client';
 
-import AnimatedService from '@/utils/AnimatedService';
-import ArrowButton from '../arrowButton/ArrowButton';
 import clsx from 'clsx';
 import { useLayoutEffect, useRef, useState } from 'react';
+
+import AnimatedService from '@/utils/AnimatedService';
+import ArrowButton from '../arrowButton/ArrowButton';
 
 type ImageType = {
   source: string;

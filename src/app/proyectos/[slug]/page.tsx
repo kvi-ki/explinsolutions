@@ -1,7 +1,8 @@
+import { notFound } from 'next/navigation';
+
 import projectList from '@/data/projects.json';
 
 import Post from '@/components/post/Post';
-import { notFound } from 'next/navigation';
 
 export default async function ProjectPage({
   params
