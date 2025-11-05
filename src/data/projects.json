@@ -24,7 +24,7 @@
       }
     ],
     "paragraps": [
-      "Uno de nuestros proyectos recientes consiste en el **diseño, fabricación y puesta en marcha de un armario eléctrico para el control de una extrusora de 90D**.",
+      "Uno de nuestros proyectos recientes consiste en el **diseño, fabricación y puesta en marcha de un armario eléctrico para el control de una extrusora** de 90D**.",
       "El sistema se compone de **dos secciones diferenciadas: potencia y control**.",
       "- En la **parte de potencia** se integra el **interruptor general** y el **control del motor principal**, un **variador Control Techniques M700 de 170 kW**, que garantiza un funcionamiento preciso y eficiente de la extrusora.",
       "- En la **parte de control** se gestiona toda la zona de **calefacción del cilindro y del cabezal**, así como los **ventiladores de refrigeración**, mediante **relés de estado sólido** que aseguran una regulación estable y duradera.Además, esta sección alberga el **PLC** encargado de la automatización del proceso y un **panel operador Siemens TP1200**, que permite al usuario supervisar y ajustar los parámetros de producción de forma sencilla e intuitiva.",

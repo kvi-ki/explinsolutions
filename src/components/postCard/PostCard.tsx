@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
+
 import AppImage from '../appImage/AppImage';
 
 type PostCardProps = {
@@ -25,7 +27,16 @@ export default function PostCard({
           className="w-80 h-60 object-cover"
           alt={imageAlt}
         ></AppImage>
-        <p className="text-text text-center">{description.slice(0, 150)}...</p>
+        <ReactMarkdown
+          components={{
+            p: ({ children }) => <p className="text-text text-center">{children}</p>,
+            strong: ({ children }) => (
+              <strong className="font-semibold text-text">{children}</strong>
+            )
+          }}
+        >
+          {`${description.slice(0, 150)}...`}
+        </ReactMarkdown>
       </div>
     </Link>
   );
