@@ -18,7 +18,7 @@ export default function PostCard({
 }: PostCardProps) {
   return (
     <Link href={link} className="p-8 flex flex-col items-center">
-      <h3 className="text-2xl">{title}</h3>
+      <h3 className="text-2xl text-center">{title}</h3>
       <div className="flex flex-col justify-center items-center gap-8">
         <AppImage
           source={imageSource}
