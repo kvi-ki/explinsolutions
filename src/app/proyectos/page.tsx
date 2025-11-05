@@ -6,9 +6,13 @@ import projectsList from '@/data/projects.json';
 import PostCard from '@/components/postCard/PostCard';
 
 export default function ProjectsPage() {
-  const formatPath = (title: string) => {
-    return title.toLowerCase().replace(/\s+/g, '-');
-  };
+  const formatPath = (title: string) =>
+    title
+      .normalize('NFD') // separates accents from letters
+      .replace(/[\u0300-\u036f]/g, '') // removes accents
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-') // replaces non-alphanumeric with hyphen
+      .replace(/^-+|-+$/g, ''); // trims leading/trailing hyphens
 
   return (
     <div className="bg-lightGray pt-10 my-10 flex flex-col justify-center items-center xl:rounded-xl">

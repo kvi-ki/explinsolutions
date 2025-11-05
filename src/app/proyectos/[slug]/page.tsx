@@ -9,7 +9,13 @@ export default async function ProjectPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const formatPath = (title: string) => title.toLowerCase().replace(/\s+/g, '-');
+  const formatPath = (title: string) =>
+    title
+      .normalize('NFD') // separates accents from letters
+      .replace(/[\u0300-\u036f]/g, '') // removes accents
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-') // replaces non-alphanumeric with hyphen
+      .replace(/^-+|-+$/g, ''); // trims leading/trailing hyphens
 
   const project = projectList.find((p) => formatPath(p.title) === slug);
 
