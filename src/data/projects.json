@@ -1,43 +1,102 @@
 [
   {
-    "title": "Proyecto numero 1",
+    "title": "Armario eléctrico para extrusora de 90D",
     "images": [
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 1 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 2 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 3 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 4 del proyecto" }
+      {
+        "source": "/images/projects/electrical-cabinet/first.jpg",
+        "alt": "Imagen 1 del proyecto"
+      },
+      {
+        "source": "/images/projects/electrical-cabinet/second.jpg",
+        "alt": "Imagen 2 del proyecto"
+      },
+      {
+        "source": "/images/projects/electrical-cabinet/third.jpg",
+        "alt": "Imagen 3 del proyecto"
+      },
+      {
+        "source": "/images/projects/electrical-cabinet/fourth.jpg",
+        "alt": "Imagen 4 del proyecto"
+      },
+      {
+        "source": "/images/projects/electrical-cabinet/fifth.jpg",
+        "alt": "Imagen 4 del proyecto"
+      }
     ],
     "paragraps": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "Uno de nuestros proyectos recientes consiste en el diseño, fabricación y puesta en marcha de un armario eléctrico para el control de una extrusora de 90D.",
+      "El sistema se compone de dos secciones diferenciadas: potencia y control.",
+      "En la parte de potencia se integra el interruptor general y el control del motor principal, un variador Control Techniques M700 de 170 kW, que garantiza un funcionamiento preciso y eficiente de la extrusora.",
+      "En la parte de control se gestiona toda la zona de calefacción del cilindro y del cabezal, así como los ventiladores de refrigeración, mediante relés de estado sólido que aseguran una regulación estable y duradera.Además, esta sección alberga el PLC encargado de la automatización del proceso y un panel operador Siemens TP1200, que permite al usuario supervisar y ajustar los parámetros de producción de forma sencilla e intuitiva.",
+      "Este proyecto refleja nuestra capacidad para combinar diseño eléctrico, automatización avanzada y fabricación propia de cuadros, ofreciendo una solución completa, fiable y adaptada a los requerimientos del cliente."
     ]
   },
   {
-    "title": "Proyecto numero 2",
+    "title": "Armario de distribución Siemens SIVACON de baja tensión",
     "images": [
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 1 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 2 del proyecto" }
+      {
+        "source": "/images/projects/siemens/first.jpg",
+        "alt": "Imagen 1 del proyecto"
+      },
+      {
+        "source": "/images/projects/siemens/second.jpg",
+        "alt": "Imagen 2 del proyecto"
+      },
+      {
+        "source": "/images/projects/siemens/third.jpg",
+        "alt": "Imagen 3 del proyecto"
+      },
+      {
+        "source": "/images/projects/siemens/fourth.jpg",
+        "alt": "Imagen 4 del proyecto"
+      },
+      {
+        "source": "/images/projects/siemens/fifth.jpg",
+        "alt": "Imagen 5 del proyecto"
+      }
     ],
     "paragraps": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "En este proyecto desarrollamos el diseño, montaje y cableado de un armario de distribución de baja tensión de la familia Siemens SIVACON, una solución modular de altas prestaciones pensada para entornos industriales con elevadas demandas de potencia y fiabilidad.",
+      "El cuadro cuenta con un interruptor general de 2500 A, del cual se derivan cuatro salidas principales a través de interruptores automáticos secundarios, configurando una distribución segura, equilibrada y de fácil mantenimiento.",
+      "Este tipo de armarios está concebido para ofrecer máxima seguridad eléctrica, flexibilidad de ampliación y rendimiento térmico optimizado.",
+      "Entre sus ventajas más destacadas se encuentra el sistema de conexión sin taladrado en las pletinas de cobre, lo que reduce significativamente los puntos calientes y las pérdidas por contacto, aumentando la eficiencia energética y la vida útil del sistema.",
+      "Además, la estructura modular SIVACON permite una instalación ordenada y accesible, facilitando tanto el montaje inicial como futuras intervenciones o ampliaciones.",
+      "Durante el proceso de fabricación se cuidaron todos los detalles: alineación de barras de potencia, conexionado, etiquetado, comprobación de par de apriete y ensayos eléctricos, garantizando que el cuadro cumpla con las normas de calidad y seguridad más exigentes.",
+      "Este proyecto ejemplifica nuestro compromiso con la excelencia técnica y la fiabilidad en sistemas de distribución eléctrica industrial, integrando componentes de primera línea con una ejecución de alto nivel."
     ]
   },
   {
-    "title": "Proyecto numero 3",
+    "title": "Pupitre de control para bobinador de armadora",
     "images": [
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 1 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 2 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 3 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 4 del proyecto" },
-      { "source": "/images/projects/example.jpg", "alt": "Imagen 5 del proyecto" }
+      {
+        "source": "/images/projects/pupitre/first.jpg",
+        "alt": "Imagen 1 del proyecto"
+      },
+      {
+        "source": "/images/projects/pupitre/second.jpg",
+        "alt": "Imagen 2 del proyecto"
+      },
+      {
+        "source": "/images/projects/pupitre/third.jpg",
+        "alt": "Imagen 3 del proyecto"
+      },
+      {
+        "source": "/images/projects/pupitre/fourth.jpg",
+        "alt": "Imagen 4 del proyecto"
+      },
+      {
+        "source": "/images/projects/pupitre/fifth.jpg",
+        "alt": "Imagen 5 del proyecto"
+      }
     ],
     "paragraps": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "En este proyecto desarrollamos un pupitre de control completo para el bobinador de una armadora, diseñado para integrar en un solo conjunto tanto el mando del operador como la electrónica de control y regulación del proceso.",
+      "El pupitre cuenta con una zona superior abatible, donde se encuentra el panel de operador Siemens KTP700 que permite la supervisión mediante sistema SCADA, junto con botoneras y selectores para operaciones manuales y tareas repetitivas.",
+      "Esta disposición facilita una interacción ergonómica y directa entre el operario y la máquina, mejorando la eficiencia y la seguridad en la operación.",
+      "En la parte interior del pupitre se alojan los elementos de control y potencia, incluyendo el variador de frecuencia, las protecciones eléctricas, el PLC y los módulos de control asociados.",
+      "El cableado se ha ejecutado con una disposición ordenada y accesible, favoreciendo el mantenimiento y la ventilación interna del conjunto.",
+      "Gracias a este diseño compacto, el sistema combina facilidad de uso, fiabilidad y robustez, integrando todos los componentes necesarios en un solo cuadro de control.",
+      "La solución reduce el espacio de instalación, simplifica el conexionado y ofrece una puesta en marcha más rápida y segura, cumpliendo con los estándares industriales de calidad y seguridad."
     ]
   }
 ]
