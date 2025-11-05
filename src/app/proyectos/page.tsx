@@ -22,7 +22,7 @@ export default function ProjectsPage() {
           {projectsList.map((project) => (
             <li
               key={project.title}
-              className="shadow-[0_0_10px_rgb(0,0,0,0.09)] rounded-xl transition-transform ease-out duration-300 md:w-sm lg:h-[30rem] hover:scale-105 hover:cursor-pointer"
+              className="shadow-[0_0_10px_rgb(0,0,0,0.09)] rounded-xl transition-transform ease-out duration-300 md:w-sm lg:h-[33rem] hover:scale-105 hover:cursor-pointer"
             >
               <PostCard
                 title={project.title}
