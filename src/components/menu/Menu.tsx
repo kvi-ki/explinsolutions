@@ -89,11 +89,12 @@ export default function Menu() {
           </li>
 
           <li
+            onMouseEnter={() => setServicesIsOpen(true)}
+            onMouseLeave={() => setServicesIsOpen(false)}
             className={`relative text-text text-base font-light ${mediumScreenSize ? '' : 'border-b border-accent font-light'}`}
           >
             <button
               type="button"
-              onClick={() => setServicesIsOpen((prev) => !prev)}
               className={`flex items-center gap-1 cursor-pointer select-none hover:text-accent ${mediumScreenSize ? 'hover:text-accent' : 'hover:text-blackColor'}`}
             >
               Servicios
@@ -106,7 +107,7 @@ export default function Menu() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.25 }}
-                  className="absolute top-full w-50 -left-4 mt-2 shadow-lg rounded-xl p-3 flex flex-col gap-2 text-sm z-50 backdrop-blur-3xl bg-lightGray/90 xl:bg-whiteColor xl:-left-15"
+                  className="absolute top-full w-50 -left-4 pt-2 shadow-lg rounded-xl p-3 flex flex-col gap-2 text-sm z-50 backdrop-blur-3xl bg-lightGray/90 xl:bg-whiteColor xl:-left-15"
                 >
                   <Link
                     aria-label="Go to Automatización industrial section"
