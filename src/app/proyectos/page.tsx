@@ -15,8 +15,8 @@ export default function ProjectsPage() {
       .replace(/^-+|-+$/g, ''); // trims leading/trailing hyphens
 
   return (
-    <div className="bg-lightGray pt-10 my-10 flex flex-col justify-center items-center xl:rounded-xl">
-      <h2 className="text-blackColor text-3xl lg:text-4xl">Proyectos</h2>
+    <div className="bg-lightGray py-10 mb-10 flex flex-col justify-center items-center xl:rounded-xl">
+      <h2 className="text-blackColor text-3xl py-5 lg:text-4xl">Proyectos</h2>
       <AnimatedService>
         <ul className="p-10 flex flex-wrap justify-center gap-10">
           {projectsList.map((project) => (
