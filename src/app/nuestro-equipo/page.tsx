@@ -3,21 +3,22 @@
 import Image from 'next/image';
 
 import AnimatedService from '@/utils/AnimatedService';
+import { motion } from 'framer-motion';
 
 export default function AboutUs() {
   return (
     <div className="bg-lightGray p-20 mb-10 xl:rounded-xl">
       <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
         <h1 className="text-4xl">Nuestro Equipo</h1>
-
-        <Image
-          src="/images/team.webp"
-          alt="explinsolutions_ team photo"
-          width={2000}
-          height={400}
-          className="w-full h-70 object-cover object-center rounded-xl"
-        />
         <AnimatedService>
+          <Image
+            src="/images/team.webp"
+            alt="explinsolutions_ team photo"
+            width={2000}
+            height={400}
+            className="w-full h-70 object-cover object-center rounded-xl"
+          />
+
           <div className="text-text text-justify text-xl flex flex-col gap-8 pt-10">
             <p>
               <b>explinsolutions_</b> es una ingeniería industrial especializada{' '}

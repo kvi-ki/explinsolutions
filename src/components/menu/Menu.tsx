@@ -141,7 +141,7 @@ export default function Menu() {
             </Link>
           </li>
 
-          <li
+          {/* <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
           >
             <Link
@@ -151,7 +151,7 @@ export default function Menu() {
             >
               Actualidad
             </Link>
-          </li>
+          </li> */}
 
           <li
             className={`${mediumScreenSize ? 'text-text font-light text-base hover:text-accent' : 'border-b border-accent text-text text-base font-light hover:text-blackColor'}`}
