@@ -25,8 +25,10 @@ export default function Service({
       <div
         id={slugify(serviceData.name)}
         className={clsx(
-          index === 0 ? 'border-b-2 border-accent xl:pb-30' : 'border-0 xl:py-30',
-          'scroll-mt-20 bg-whiteColor text-text text-justify  text-base font-light p-14 xl:scroll-mt-16'
+          index === 0
+            ? 'scroll-mt-20 border-b-2 border-accent xl:pb-30 xl:scroll-mt-16'
+            : 'border-0 xl:py-30',
+          'bg-whiteColor text-text text-justify  text-base font-light p-14'
         )}
       >
         <div className="flex flex-col gap-2 pb-10 xl:pb-20">
