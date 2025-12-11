@@ -6,7 +6,7 @@ import AnimatedService from '@/utils/AnimatedService';
 
 export default function AboutUs() {
   return (
-    <div className="bg-lightGray p-20 mb-10 xl:rounded-xl">
+    <div className="bg-lightGray p-8 mb-10 lg:p-20 xl:rounded-xl">
       <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
         <h1 className="text-4xl">Nuestro Equipo</h1>
         <AnimatedService>
@@ -18,7 +18,7 @@ export default function AboutUs() {
             className="w-full h-70 object-cover object-center rounded-xl"
           />
 
-          <div className="text-text text-xl flex flex-col gap-8 pt-10">
+          <div className="text-text text-xl flex flex-col gap-8 pt-10 lg:text-justify">
             <p>
               <b>
                 explinsolutions<span className="text-accent">_</span>
