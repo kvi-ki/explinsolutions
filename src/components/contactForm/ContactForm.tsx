@@ -35,9 +35,9 @@ export default function ContactForm() {
       id="contact-form"
       ref={form}
       onSubmit={sendEmail}
-      className="mb-10 flex flex-col self-center xl:p-0"
+      className="order-1 lg:order-2 flex flex-col self-center xl:p-0"
     >
-      <div className="py-5 w-xs lg:w-xl">
+      <div className="py-5 w-xs md:w-md lg:w-xl">
         <div className="flex flex-col gap-8">
           <FormField
             inputData={{

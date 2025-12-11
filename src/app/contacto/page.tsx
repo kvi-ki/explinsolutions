@@ -9,14 +9,17 @@ import ContactForm from '@/components/contactForm/ContactForm';
 
 export default function ContactPage() {
   return (
-    <div className="bg-lightGray p-8 mb-10 flex flex-col justify-center items-center xl:p-10 xl:rounded-xl ">
-      <h2 className="text-center text-gray text-3xl lg:pt-12 lg:text-4xl">
+    <div className="bg-lightGray p-8 flex flex-col justify-center items-center lg:mb-10 xl:p-10 xl:rounded-xl ">
+      <h2 className="text-center text-gray text-3xl pb-8 lg:pb-0 lg:pt-12 lg:text-4xl">
         <span className="text-blackColor">Ponte en contacto </span>
         con nosotros
       </h2>
       <AnimatedService>
-        <div className="w-full pt-10 flex flex-col justify-center gap-40 lg:flex-row lg:items-center">
-          <div>
+        <div className="w-full flex flex-col justify-center lg:gap-20 xl:gap-40 lg:flex-row lg:items-center">
+          <div className="order-2 lg:order-1 my-12 lg:my-0">
+            <h2 className="pb-8 text-center text-blackColor text-3xl lg:hidden">
+              Dónde estamos
+            </h2>
             <ul className="flex flex-col items-center">
               {data.contacts.data.map((contact) => (
                 <Contact
