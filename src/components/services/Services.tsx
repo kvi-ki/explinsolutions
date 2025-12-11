@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function Services() {
   return (
-    <section className="relative mb-10 p-6 space-y-10 xl:rounded-xl lg:py-20">
-      <div className="absolute bg-[url(/images/example.jpeg)] bg-cover bg-center inset-0 opacity-28 xl:rounded-xl z-0"></div>
+    <section className="relative mb-10 p-6 space-y-10 2xl:rounded-xl lg:py-20">
+      <div className="absolute bg-[url(/images/example.jpeg)] bg-cover bg-center inset-0 opacity-28 2xl:rounded-xl z-0"></div>
       <div className="relative z-10 flex flex-col gap-14">
         <h2 className="pt-6 text-center text-blackColor text-3xl lg:pt-12 lg:text-4xl">
           Servicios de ingeniería para la industria
