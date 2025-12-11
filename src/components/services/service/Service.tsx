@@ -28,7 +28,7 @@ export default function Service({
           index === 0
             ? 'scroll-mt-20 border-b-2 border-accent xl:pb-30 xl:scroll-mt-16'
             : 'border-0 xl:py-30',
-          'bg-whiteColor text-text text-justify  text-base font-light p-14'
+          'bg-whiteColor text-text lg:text-justify  text-base font-light p-14'
         )}
       >
         <div className="flex flex-col gap-2 pb-10 xl:pb-20">
@@ -42,7 +42,7 @@ export default function Service({
           </h3>
         </div>
 
-        <ul className="flex flex-col gap-30">
+        <ul className="flex flex-col gap-20 lg:gap-30">
           <li
             key={4}
             className="flex flex-col items-center justify-center gap-10 md:flex-row lg:gap-20"
