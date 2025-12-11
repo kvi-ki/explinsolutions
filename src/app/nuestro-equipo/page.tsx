@@ -3,7 +3,6 @@
 import Image from 'next/image';
 
 import AnimatedService from '@/utils/AnimatedService';
-import { motion } from 'framer-motion';
 
 export default function AboutUs() {
   return (
@@ -19,31 +18,33 @@ export default function AboutUs() {
             className="w-full h-70 object-cover object-center rounded-xl"
           />
 
-          <div className="text-text text-justify text-xl flex flex-col gap-8 pt-10">
+          <div className="text-text text-xl flex flex-col gap-8 pt-10">
             <p>
-              <b>explinsolutions_</b> es una ingeniería industrial especializada{' '}
-              <b>en automatización y sistemas eléctricos llave en mano</b>.
+              <b>
+                explinsolutions<span className="text-accent">_</span>
+              </b>{' '}
+              es una ingeniería industrial especializada en automatización y sistemas
+              eléctricos llave en mano.
             </p>
             <p>
-              Acompañamos a cada cliente en todo el proceso:{' '}
-              <b>diseñamos, programamos, fabricamos e implantamos soluciones</b> que
-              optimizan la producción y elevan la eficiencia de sus operaciones.
+              Acompañamos a cada cliente en todo el proceso: diseñamos, programamos,
+              fabricamos e implantamos soluciones que optimizan la producción y
+              elevan la eficiencia de sus operaciones.
             </p>
             <p>
-              Nuestro equipo une <b>experiencia consolidada</b> con una{' '}
-              <b>visión joven e innovadora</b>, trabajando siempre bajo tres pilares
-              fundamentales: <b>eficiencia, innovación y fiabilidad</b>.
+              Nuestro equipo une experiencia consolidada con una visión joven e
+              innovadora, trabajando siempre bajo tres pilares fundamentales:
+              eficiencia, innovación y fiabilidad.
             </p>
             <p>
-              Lo que nos diferencia es la{' '}
-              <b>atención directa y cercana, el compromiso con la calidad</b> y la{' '}
-              <b>flexibilidad</b> para adaptarnos a las necesidades específicas de
-              sectores tan exigentes como{' '}
-              <b>alimentación, farmacéutica, logística, energía y manufactura</b>.
+              Lo que nos diferencia es la atención directa y cercana, el compromiso
+              con la calidad y la flexibilidad para adaptarnos a las necesidades
+              específicas de sectores tan exigentes como alimentación, farmacéutica,
+              logística, energía y manufactura.
             </p>
             <p>
-              En cada proyecto buscamos no solo ofrecer un servicio técnico, sino una{' '}
-              <b>solución real que marque la diferencia desde el primer día</b>.
+              En cada proyecto buscamos no solo ofrecer un servicio técnico, sino una
+              solución real que marque la diferencia desde el primer día.
             </p>
           </div>
         </AnimatedService>
