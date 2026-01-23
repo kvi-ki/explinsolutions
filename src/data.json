@@ -1,28 +1,4 @@
 {
-  "value": {
-    "data": [
-      {
-        "number": "85%",
-        "title": "Clientes satisfechos",
-        "subtitle": "Repiten"
-      },
-      {
-        "number": "40",
-        "title": "Años de experiencia",
-        "subtitle": "Acumulada"
-      },
-      {
-        "number": "+4K",
-        "title": "Armarios eléctricos",
-        "subtitle": "Fabricados"
-      },
-      {
-        "number": "+9K",
-        "title": "Proyectos técnicos",
-        "subtitle": "Realizados"
-      }
-    ]
-  },
   "services": {
     "data": [
       {
