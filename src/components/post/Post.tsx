@@ -65,9 +65,20 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
     const element = lightboxRef.current;
     if (!element) return;
 
-    const imageWidth = 640 + 40; // 40rem (640px) + gap (40px)
+    const listItems = element.querySelectorAll('li');
+    if (listItems.length === 0 || index >= listItems.length) return;
+
+    const targetItem = listItems[index] as HTMLElement;
+    const containerRect = element.getBoundingClientRect();
+    const itemRect = targetItem.getBoundingClientRect();
+
+    // Calculate item position relative to scroll container
+    const itemLeftRelativeToContainer = itemRect.left - containerRect.left + element.scrollLeft;
     const containerWidth = element.clientWidth;
-    const scrollPosition = index * imageWidth - (containerWidth - 640) / 2;
+    const itemWidth = itemRect.width;
+
+    // Center the item in the container
+    const scrollPosition = itemLeftRelativeToContainer - (containerWidth - itemWidth) / 2;
     element.scrollTo({ left: Math.max(0, scrollPosition), behavior: 'smooth' });
   };
 
@@ -93,11 +104,25 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
     const element = lightboxRef.current;
     if (!element || !isLightboxOpen) return;
 
-    // Scroll to the clicked image
-    const imageWidth = 640 + 40; // 40rem (640px) + gap (40px)
-    const containerWidth = element.clientWidth;
-    const scrollPosition = clickedImageIndex * imageWidth - (containerWidth - 640) / 2;
-    element.scrollTo({ left: Math.max(0, scrollPosition), behavior: 'instant' });
+    // Scroll to the clicked image - use timeout to ensure images are rendered
+    setTimeout(() => {
+      const listItems = element.querySelectorAll('li');
+      if (listItems.length === 0 || clickedImageIndex >= listItems.length) return;
+
+      const targetItem = listItems[clickedImageIndex] as HTMLElement;
+      const containerRect = element.getBoundingClientRect();
+      const itemRect = targetItem.getBoundingClientRect();
+
+      // Calculate item position relative to scroll container
+      const itemLeftRelativeToContainer =
+        itemRect.left - containerRect.left + element.scrollLeft;
+      const containerWidth = element.clientWidth;
+      const itemWidth = itemRect.width;
+
+      // Center the item in the container
+      const scrollPosition = itemLeftRelativeToContainer - (containerWidth - itemWidth) / 2;
+      element.scrollTo({ left: Math.max(0, scrollPosition), behavior: 'instant' });
+    }, 0);
 
     const handleScrollPosition = () => {
       const { scrollLeft, scrollWidth, clientWidth } = element;
@@ -146,13 +171,13 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
           >
             <ArrowButton
               buttonClass={clsx(
-                'size-10 aspect-square flex items-center justify-center rounded-full border cursor-pointer bg-background/80',
+                'size-6 sm:size-8 md:size-10 aspect-square flex items-center justify-center rounded-full border cursor-pointer bg-background/80',
                 lightboxLeftStyle,
                 shortList && 'hidden'
               )}
               label="Desplázate a la derecha"
-              iconClass="rotate-180 size-4"
-              handleClick={() => handleLightboxScroll(-700)}
+              iconClass="rotate-180 size-2 sm:size-3 md:size-4"
+              handleClick={() => handleLightboxScroll(-window.innerWidth * 0.7)}
             />
             <div
               ref={lightboxRef}
@@ -163,7 +188,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
             >
               <ul
                 className={clsx(
-                  'flex gap-10 justify-start p-4',
+                  'flex gap-4 md:gap-10 justify-start p-2 md:p-4',
                   shortList && 'flex-wrap justify-center'
                 )}
               >
@@ -172,7 +197,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
                     <img
                       src={image.source}
                       onClick={() => scrollToImage(index)}
-                      className="w-[40rem] h-[50rem] object-cover shadow-[0_0_20px_rgba(0,0,0,0.5)] rounded-xl cursor-pointer"
+                      className="w-[70vw] h-[45vh] sm:w-[50vw] sm:h-[60vh] md:w-[40rem] md:h-[50rem] object-cover shadow-[0_0_20px_rgba(0,0,0,0.5)] rounded-xl cursor-pointer"
                       alt={image.alt}
                     />
                   </li>
@@ -181,13 +206,13 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
             </div>
             <ArrowButton
               buttonClass={clsx(
-                'size-10 aspect-square flex items-center justify-center rounded-full border cursor-pointer bg-background/80',
+                'size-6 sm:size-8 md:size-10 aspect-square flex items-center justify-center rounded-full border cursor-pointer bg-background/80',
                 lightboxRightStyle,
                 shortList && 'hidden'
               )}
               label="Desplázate a la izquierda"
-              iconClass="size-4"
-              handleClick={() => handleLightboxScroll(700)}
+              iconClass="size-2 sm:size-3 md:size-4"
+              handleClick={() => handleLightboxScroll(window.innerWidth * 0.7)}
             />
           </div>
         </div>
@@ -200,13 +225,13 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
         <div className="w-full flex gap-2 items-center md:gap-10">
           <ArrowButton
             buttonClass={clsx(
-              'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
+              'size-4 sm:size-6 md:size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
               leftButtonStyle,
               shortList && 'hidden'
             )}
             label="Desplázate a la derecha"
-            iconClass="rotate-180 size-3"
-            handleClick={() => handleScroll(-440)}
+            iconClass="rotate-180 size-2 sm:size-2.5 md:size-3"
+            handleClick={() => handleScroll(-300)}
           />
           <div
             ref={ref}
@@ -226,7 +251,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
                   <img
                     src={image.source}
                     onClick={() => openLightbox(index)}
-                    className="w-[20rem] h-[25rem] object-cover shadow-[0_0_10px_rgba(0,0,0,0.25),0_0_8px_rgba(255,255,255,0.09)] rounded-xl hover:cursor-pointer hover:scale-105 transition-transform duration-300"
+                    className="w-[61vw] h-[40vh] sm:w-[40vw] sm:h-[50vh] md:w-[20rem] md:h-[25rem] object-cover shadow-[0_0_10px_rgba(0,0,0,0.25),0_0_8px_rgba(255,255,255,0.09)] rounded-xl hover:cursor-pointer hover:scale-105 transition-transform duration-300"
                     alt={image.alt}
                   />
                 </li>
@@ -235,13 +260,13 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
           </div>
           <ArrowButton
             buttonClass={clsx(
-              'size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
+              'size-4 sm:size-6 md:size-7 aspect-square flex items-center justify-center rounded-full border cursor-pointer',
               rightButtonStyle,
               shortList && 'hidden'
             )}
             label="Desplázate a la izquierda"
-            iconClass="size-3"
-            handleClick={() => handleScroll(440)}
+            iconClass="size-2 sm:size-2.5 md:size-3"
+            handleClick={() => handleScroll(300)}
           />
         </div>
         <AnimatedService>
@@ -256,9 +281,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
                       </p>
                     ),
                     strong: ({ children }) => (
-                      <strong className="font-semibold text-text">
-                        {children}
-                      </strong>
+                      <strong className="font-semibold text-text">{children}</strong>
                     ),
                     ul: ({ children }) => (
                       <ul className="list-disc ml-6 text-text text-lg font-light space-y-1">
@@ -266,9 +289,7 @@ export default function Post({ id, title, imageList, paragraphList }: PostProps)
                       </ul>
                     ),
                     li: ({ children }) => (
-                      <li className="text-text text-lg font-light">
-                        {children}
-                      </li>
+                      <li className="text-text text-lg font-light">{children}</li>
                     )
                   }}
                 >
