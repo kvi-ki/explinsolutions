@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { StrictMode } from 'react';
 
 import Contacts from '@/components/contacts/Contacts';
@@ -11,15 +10,17 @@ import Description from '@/components/description/Description';
 export default function Page() {
   return (
     <StrictMode>
-      <Image
-        src="/banner.jpg"
-        alt="Homepage banner with product showcase"
-        width={800}
-        height={400}
-        sizes="100vw"
-        priority
-        className="w-full 2xl:rounded-xl"
-      />
+      <picture>
+        <source media="(min-width: 1536px)" srcSet="/images/banner-2xl.jpg" />
+        <source media="(min-width: 1280px)" srcSet="/images/banner-xl.jpg" />
+        <source media="(min-width: 1024px)" srcSet="/images/banner-lg.jpg" />
+        <source media="(min-width: 768px)" srcSet="/images/banner-md.jpg" />
+        <img
+          src="/images/banner-sm.jpg"
+          alt="Homepage banner with product showcase"
+          className="w-full 2xl:rounded-xl"
+        />
+      </picture>
       <Description />
       <Services />
       <Contacts />
