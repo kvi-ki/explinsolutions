@@ -11,12 +11,12 @@ export default function Page() {
   return (
     <StrictMode>
       <picture>
-        <source media="(min-width: 1536px)" srcSet="/images/banner-2xl.jpg" />
-        <source media="(min-width: 1280px)" srcSet="/images/banner-xl.jpg" />
-        <source media="(min-width: 1024px)" srcSet="/images/banner-lg.jpg" />
-        <source media="(min-width: 768px)" srcSet="/images/banner-md.jpg" />
+        <source media="(min-width: 1536px)" srcSet="/images/banner-2xl.webp" />
+        <source media="(min-width: 1280px)" srcSet="/images/banner-xl.webp" />
+        <source media="(min-width: 1024px)" srcSet="/images/banner-lg.webp" />
+        <source media="(min-width: 768px)" srcSet="/images/banner-md.webp" />
         <img
-          src="/images/banner-sm.jpg"
+          src="/images/banner-sm.webp"
           alt="Homepage banner with product showcase"
           className="w-full 2xl:rounded-xl"
         />
